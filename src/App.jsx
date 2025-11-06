@@ -1,8 +1,14 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './App.css';
 
 const App = () => {
   const canvasRef = useRef(null);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    // Trigger fade-in animations
+    setLoaded(true);
+  }, []);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -35,11 +41,11 @@ const App = () => {
       return { x, y };
     };
 
-    // Generate world map pixels
+    // Generate world map pixels with smaller, more detailed dots
     const generateMapPixels = () => {
       const pixels = [];
-      const pixelSize = 4;
-      const spacing = 6;
+      const pixelSize = 2; // Smaller dots
+      const spacing = 4; // Tighter spacing for more detail
 
       // Create a grid of pixels representing continents
       for (let y = 0; y < canvas.height; y += spacing) {
@@ -48,29 +54,38 @@ const App = () => {
           const lon = (x / canvas.width) * 360 - 180;
           const lat = 90 - (y / canvas.height) * 180;
 
-          // Rough continent boundaries
+          // More detailed continent boundaries
           const isLand =
             // North America
-            (lon >= -170 && lon <= -50 && lat >= 15 && lat <= 70) ||
+            (lon >= -170 && lon <= -50 && lat >= 15 && lat <= 72) ||
+            (lon >= -130 && lon <= -55 && lat >= 5 && lat <= 15) ||
+            // Central America
+            (lon >= -110 && lon <= -75 && lat >= 5 && lat <= 25) ||
             // South America
-            (lon >= -80 && lon <= -35 && lat >= -55 && lat <= 15) ||
+            (lon >= -82 && lon <= -34 && lat >= -56 && lat <= 13) ||
             // Europe
-            (lon >= -10 && lon <= 40 && lat >= 35 && lat <= 70) ||
+            (lon >= -10 && lon <= 42 && lat >= 36 && lat <= 71) ||
             // Africa
-            (lon >= -20 && lon <= 50 && lat >= -35 && lat <= 37) ||
+            (lon >= -18 && lon <= 52 && lat >= -35 && lat <= 38) ||
+            // Middle East
+            (lon >= 34 && lon <= 60 && lat >= 12 && lat <= 42) ||
             // Asia
-            (lon >= 40 && lon <= 150 && lat >= -10 && lat <= 75) ||
+            (lon >= 42 && lon <= 150 && lat >= -10 && lat <= 77) ||
+            // Southeast Asia
+            (lon >= 92 && lon <= 141 && lat >= -11 && lat <= 28) ||
             // Australia
-            (lon >= 110 && lon <= 155 && lat >= -45 && lat <= -10);
+            (lon >= 113 && lon <= 154 && lat >= -44 && lat <= -10) ||
+            // New Zealand
+            (lon >= 166 && lon <= 179 && lat >= -47 && lat <= -34);
 
           if (isLand) {
             pixels.push({
               x,
               y,
               size: pixelSize,
-              baseOpacity: 0.08,
-              opacity: 0.08,
-              pulseSpeed: 0.001 + Math.random() * 0.002,
+              baseOpacity: 0.12,
+              opacity: 0.12,
+              pulseSpeed: 0.0008 + Math.random() * 0.0012,
               pulseOffset: Math.random() * Math.PI * 2
             });
           }
@@ -82,13 +97,13 @@ const App = () => {
 
     const pixels = generateMapPixels();
 
-    // Add pulsing effect for cities
+    // Add pulsing effect for cities with larger radius
     const cityPulses = cities.map(city => {
       const pos = latLonToCanvas(city.lat, city.lon);
       return {
         ...pos,
-        radius: 40,
-        pulseSpeed: 0.002,
+        radius: 80, // Larger influence radius
+        pulseSpeed: 0.0015, // Slower, more elegant pulse
         pulseOffset: Math.random() * Math.PI * 2
       };
     });
@@ -100,7 +115,7 @@ const App = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       time += 1;
 
-      // Draw base pixels
+      // Draw base pixels with smoother pulsing
       pixels.forEach(pixel => {
         const cityInfluence = cityPulses.reduce((acc, city) => {
           const dx = pixel.x - city.x;
@@ -108,16 +123,19 @@ const App = () => {
           const distance = Math.sqrt(dx * dx + dy * dy);
 
           if (distance < city.radius) {
-            const pulse = Math.sin(time * city.pulseSpeed + city.pulseOffset) * 0.5 + 0.5;
-            const influence = (1 - distance / city.radius) * pulse * 0.15;
+            // Smoother sine wave for seamless pulsing
+            const pulse = (Math.sin(time * city.pulseSpeed + city.pulseOffset) + 1) / 2;
+            // Smooth falloff from center
+            const falloff = Math.pow(1 - distance / city.radius, 2);
+            const influence = falloff * pulse * 0.2;
             return acc + influence;
           }
           return acc;
         }, 0);
 
-        const opacity = Math.min(pixel.baseOpacity + cityInfluence, 0.25);
+        const opacity = Math.min(pixel.baseOpacity + cityInfluence, 0.35);
 
-        ctx.fillStyle = `rgba(180, 180, 180, ${opacity})`;
+        ctx.fillStyle = `rgba(190, 190, 190, ${opacity})`;
         ctx.fillRect(pixel.x, pixel.y, pixel.size, pixel.size);
       });
 
@@ -137,11 +155,11 @@ const App = () => {
       <canvas ref={canvasRef} className="world-map-canvas" />
 
       <div className="content">
-        <div className="logo-container">
+        <div className={`logo-container ${loaded ? 'fade-in' : ''}`}>
           <img src="/logo.svg" alt="Centurim" className="logo" />
         </div>
 
-        <div className="text-container">
+        <div className={`text-container ${loaded ? 'fade-in-delayed' : ''}`}>
           <p className="description">
             We architect the bespoke digital presence that differentiates<br />
             your practice while meeting global compliance<br />
