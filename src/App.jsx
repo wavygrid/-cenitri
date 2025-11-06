@@ -161,9 +161,7 @@ const App = () => {
 
         <div className={`text-container ${loaded ? 'fade-in-delayed' : ''}`}>
           <p className="description">
-            We architect the bespoke digital presence that differentiates<br />
-            your practice while meeting global compliance<br />
-            requirements.
+            We architect the bespoke digital presence that differentiates your practice while meeting global compliance requirements.
           </p>
           <a href="mailto:contact@centurim.com" className="contact">
             contact@centurim.com

@@ -72,6 +72,7 @@
   text-align: center;
   letter-spacing: 0.3px;
   margin: 0;
+  max-width: 600px;
 }
 
 .contact {
