@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 export const EmailForm = () => {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -18,26 +24,21 @@ export const EmailForm = () => {
     }
 
     setIsSubmitting(true);
-    try {
-      const form = e.target;
-      const formData = new FormData(form);
 
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString(),
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "early-access",
+          "email": email
+        })
       });
 
-      console.log('✅ Form submitted:', { email, status: response.status });
-
-      if (!response.ok) {
-        throw new Error('Form submission failed');
-      }
-
+      console.log('✅ Form submitted successfully:', email);
       setSuccess(true);
       setEmail('');
 
-      // Reset success message after 5 seconds
       setTimeout(() => setSuccess(false), 5000);
     } catch (err) {
       console.error('❌ Submission Error:', err);
