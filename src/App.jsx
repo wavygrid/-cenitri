@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './App.css';
+import { EmailForm } from './components/EmailForm';
 
 const App = () => {
   const canvasRef = useRef(null);
@@ -161,11 +162,21 @@ const App = () => {
 
         <div className={`text-container ${loaded ? 'fade-in-delayed' : ''}`}>
           <p className="description">
-            We architect the bespoke digital presence that differentiates your practice while meeting global compliance requirements.
+            The AI Case Analyst that interviews, audits evidence, and briefs your team on visa eligibility before the consultation begins. Also works for you 24X7
           </p>
+
+          <EmailForm />
+
           <a href="mailto:contact@centurim.com" className="contact">
             contact@centurim.com
           </a>
+        </div>
+
+        <div className={`compliance-badges ${loaded ? 'fade-in-delayed' : ''}`}>
+          <div className="badge">SOC 2 Type II</div>
+          <div className="badge">GDPR Ready</div>
+          <div className="badge">CCPA Ready</div>
+          <div className="badge">AES-256</div>
         </div>
       </div>
     </div>
