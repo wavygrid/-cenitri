@@ -66,25 +66,23 @@ export const EmailForm = () => {
       name="early-access"
       method="POST"
       data-netlify="true"
-      className="w-full max-w-2xl mx-auto"
+      className="w-full max-w-xl mx-auto"
     >
       <input type="hidden" name="form-name" value="early-access" />
-      <div className="flex flex-col sm:flex-row gap-3 items-stretch">
-        <div className="flex-1">
-          <Input
-            type="email"
-            name="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your business email"
-            className="bg-white/5 border-white/20 text-white placeholder:text-white/40 h-11 text-sm w-full"
-            disabled={isSubmitting}
-            required
-          />
-        </div>
+      <div className="flex flex-col sm:flex-row gap-2.5">
+        <Input
+          type="email"
+          name="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter your business email"
+          className="bg-white/5 border-white/20 text-white placeholder:text-white/40 h-11 text-sm flex-1 min-w-0"
+          disabled={isSubmitting}
+          required
+        />
         <Button
           type="submit"
-          className="bg-white text-black hover:bg-white/90 h-11 px-8 text-sm font-medium whitespace-nowrap shrink-0"
+          className="bg-white text-black hover:bg-white/90 h-11 px-6 text-sm font-medium whitespace-nowrap"
           disabled={isSubmitting}
         >
           {isSubmitting ? 'Submitting...' : 'Request Early Access'}
