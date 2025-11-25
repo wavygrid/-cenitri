@@ -79,7 +79,7 @@ export const EmailForm = () => {
         />
         <Button
           type="submit"
-          className="bg-white text-black hover:bg-white/90 h-12 px-8 text-base font-medium whitespace-nowrap"
+          className="bg-white text-black hover:bg-white/90 h-12 px-12 text-base font-medium whitespace-nowrap min-w-[240px]"
           disabled={isSubmitting}
         >
           {isSubmitting ? 'Submitting...' : 'Request Early Access'}
