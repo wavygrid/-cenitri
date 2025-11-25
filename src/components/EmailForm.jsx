@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
-import { validateBusinessEmail } from '../lib/email-validation';
 
 export const EmailForm = () => {
   const [email, setEmail] = useState('');
@@ -13,9 +12,8 @@ export const EmailForm = () => {
     e.preventDefault();
     setError('');
 
-    const emailValidation = validateBusinessEmail(email);
-    if (!emailValidation.isValid) {
-      setError(emailValidation.error);
+    if (!email || !email.includes('@')) {
+      setError('Please enter a valid email address');
       return;
     }
 
@@ -36,14 +34,17 @@ export const EmailForm = () => {
 
         if (!response.ok) throw new Error('Form submission failed');
       } else {
-        console.log('Form submission (local):', { email });
+        console.log('✅ Form submission (local):', { email });
         await new Promise(resolve => setTimeout(resolve, 1000));
       }
 
       setSuccess(true);
       setEmail('');
+
+      // Reset success message after 5 seconds
+      setTimeout(() => setSuccess(false), 5000);
     } catch (err) {
-      console.error('Error:', err);
+      console.error('❌ Error:', err);
       setError('Submission failed. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -52,7 +53,7 @@ export const EmailForm = () => {
 
   if (success) {
     return (
-      <div className="w-full max-w-2xl mx-auto text-center">
+      <div className="w-full max-w-xl mx-auto text-center">
         <div className="p-4 rounded-lg bg-white/5 border border-white/10">
           <p className="text-sm text-white/90">Thank you! We'll be in touch soon.</p>
         </div>
