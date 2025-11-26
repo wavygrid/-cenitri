@@ -26,14 +26,19 @@ export const EmailForm = () => {
     setIsSubmitting(true);
 
     try {
-      await fetch("/", {
+      const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
           "form-name": "early-access",
+          "bot-field": "",
           "email": email
         })
       });
+
+      if (!response.ok) {
+        throw new Error('Form submission failed');
+      }
 
       console.log('✅ Form submitted successfully:', email);
       setSuccess(true);
@@ -64,9 +69,11 @@ export const EmailForm = () => {
       name="early-access"
       method="POST"
       data-netlify="true"
+      netlify-honeypot="bot-field"
       className="w-full max-w-3xl mx-auto"
     >
       <input type="hidden" name="form-name" value="early-access" />
+      <input type="hidden" name="bot-field" />
       <div className="flex flex-col md:flex-row gap-3">
         <Input
           type="email"

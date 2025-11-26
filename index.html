@@ -14,7 +14,8 @@
     <script type="module" src="/src/main.jsx"></script>
 
     <!-- Hidden Netlify Form for form detection -->
-    <form name="early-access" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <form name="early-access" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="bot-field" />
       <input type="email" name="email" />
     </form>
   </body>
