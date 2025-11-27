@@ -37,13 +37,15 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
       >
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
           {/* Logo */}
-          <div 
-            className="flex items-center gap-3 cursor-pointer group" 
+          <div
+            className="flex items-center gap-3 cursor-pointer group"
             onClick={() => onNavigate('home')}
           >
-            <span className="text-xl font-bold tracking-tight text-zinc-900 leading-none font-sans">
-              Centurim
-            </span>
+            <img
+              src="/dark_logo.svg"
+              alt="Centurin"
+              className="h-5 sm:h-6 w-auto transition-opacity group-hover:opacity-80"
+            />
           </div>
 
           {/* Desktop Links */}
