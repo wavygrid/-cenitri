@@ -15,8 +15,7 @@ const Footer: React.FC<FooterProps> = ({ currentView, onNavigate }) => {
           <div className="col-span-1 md:col-span-2">
             <img src="/Centurim_logo_dark.svg" alt="Centurim" className="h-8 mb-6" />
             <div className="text-zinc-500 text-sm space-y-1">
-               <p>Global Operations</p>
-               <p>US Data Sovereignty (Virginia)</p>
+               <p>Autonomous Document Reconciliation Platform</p>
             </div>
           </div>
 
@@ -31,8 +30,11 @@ const Footer: React.FC<FooterProps> = ({ currentView, onNavigate }) => {
         </div>
 
         <div className="border-t border-zinc-100 pt-8">
-          <p className="text-zinc-400 text-xs leading-relaxed max-w-4xl">
+          <p className="text-zinc-400 text-xs leading-relaxed max-w-4xl mb-6">
             <strong>Disclaimer:</strong> Centurim provides data consistency analysis and variance reporting. The services provided do not constitute legal, medical, or financial advice. Final coding, billing, and payment decisions remain the sole responsibility of the provider.
+          </p>
+          <p className="text-zinc-400 text-xs text-center">
+            All Rights Reserved © Centurim Systems Limited 2026
           </p>
         </div>
       </div>
