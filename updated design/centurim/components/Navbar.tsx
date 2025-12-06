@@ -16,15 +16,20 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-900 text-white h-20 flex items-center border-b border-white/10">
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between h-full">
           {/* Logo Section */}
-          <div
-            className="flex items-center gap-4 cursor-pointer"
+          <div 
+            className="flex items-center gap-4 cursor-pointer" 
             onClick={() => onNavigate('home')}
           >
-            <img src="/Centurim_logo.svg" alt="Centurim" className="h-8" />
+            <span className="text-2xl font-bold tracking-wide text-white leading-none font-sans uppercase">
+              Centurim
+            </span>
           </div>
 
           {/* Desktop Links (Left) */}
           <div className="hidden md:flex items-center gap-8 ml-12 mr-auto">
+            <button onClick={() => onNavigate('platform')} className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
+              Platform
+            </button>
             <button onClick={() => onNavigate('compliance')} className="text-sm font-medium text-zinc-400 hover:text-white transition-colors">
               Security
             </button>
@@ -53,8 +58,14 @@ const Navbar: React.FC<NavbarProps> = ({ currentView, onNavigate }) => {
         <div className="fixed inset-0 top-20 bg-navy-900 z-40 overflow-y-auto border-t border-white/10">
           <div className="p-8 flex flex-col gap-6">
             <div className="space-y-4 flex flex-col">
-              <button
-                className="text-left text-lg font-medium text-white hover:text-zinc-300"
+              <button 
+                className="text-left text-lg font-medium text-white hover:text-zinc-300" 
+                onClick={() => { onNavigate('platform'); setMobileMenuOpen(false); }}
+              >
+                Platform
+              </button>
+              <button 
+                className="text-left text-lg font-medium text-white hover:text-zinc-300" 
                 onClick={() => { onNavigate('compliance'); setMobileMenuOpen(false); }}
               >
                 Security

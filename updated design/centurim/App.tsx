@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import PlatformPage from './components/PlatformPage';
 import CompliancePage from './components/CompliancePage';
 import MarketsPage from './components/MarketsPage';
 import DeployPage from './components/DeployPage';
@@ -9,7 +10,7 @@ import TermsPage from './components/TermsPage';
 import CookiePage from './components/CookiePage';
 import Footer from './components/Footer';
 
-export type ViewState = 'home' | 'compliance' | 'markets' | 'deploy' | 'privacy' | 'terms' | 'cookies';
+export type ViewState = 'home' | 'platform' | 'compliance' | 'markets' | 'deploy' | 'privacy' | 'terms' | 'cookies';
 
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<ViewState>('home');
@@ -40,6 +41,12 @@ const App: React.FC = () => {
         updateMetadata(
           "Centurim Health | Automated PDPM Revenue Integrity",
           "Automated clinical documentation integrity (CDI) for Skilled Nursing Facilities. Reconcile Hospital Transfer Packets against MDS 3.0 Assessments to capture NTA revenue."
+        );
+        break;
+      case 'platform':
+        updateMetadata(
+          "Centurim Platform | Architectural Logic & Logic Library",
+          "Explore the deterministic logic core of the Centurim Engine. Select from pre-configured visa architectures and compliance modules."
         );
         break;
       case 'compliance':
@@ -85,10 +92,11 @@ const App: React.FC = () => {
       <Navbar currentView={currentView} onNavigate={navigateTo} />
       <main className="flex-grow">
         {currentView === 'home' && <Home onNavigate={navigateTo} />}
+        {currentView === 'platform' && <PlatformPage onNavigate={navigateTo} />}
         {currentView === 'compliance' && <CompliancePage />}
         {currentView === 'markets' && <MarketsPage onNavigate={navigateTo} />}
         {currentView === 'deploy' && <DeployPage />}
-
+        
         {/* Legal Pages */}
         {currentView === 'privacy' && <PrivacyPage onNavigate={navigateTo} />}
         {currentView === 'terms' && <TermsPage onNavigate={navigateTo} />}

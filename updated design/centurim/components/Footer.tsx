@@ -13,7 +13,7 @@ const Footer: React.FC<FooterProps> = ({ currentView, onNavigate }) => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
           
           <div className="col-span-1 md:col-span-2">
-            <img src="/Centurim_logo_dark.svg" alt="Centurim" className="h-8 mb-6" />
+            <span className="text-xl font-bold tracking-wide uppercase block mb-6">Centurim</span>
             <div className="text-zinc-500 text-sm space-y-1">
                <p>Global Operations</p>
                <p>US Data Sovereignty (Virginia)</p>
