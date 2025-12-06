@@ -191,7 +191,7 @@ const PrivacyPage: React.FC<PrivacyPageProps> = ({ onNavigate }) => {
               <p className="text-sm space-y-1">
                 <strong>Attn:</strong> Privacy Officer<br/>
                 <strong>Email:</strong> <a href="mailto:privacy@centurim.com" className="text-blue-600 hover:underline">privacy@centurim.com</a><br/>
-                <strong>USA Address:</strong> 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ<br/>
+                <strong>USA Address:</strong> 701 E Franklin Street, Suite 105, Richmond, VA 23219, United States<br/>
                 <strong>UK Address:</strong> 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ
               </p>
             </div>
