@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/page_icon.svg" />
+
     <!-- Primary Meta Tags -->
     <title>Centurim Health | Automated Revenue Integrity for SNFs</title>
     <meta name="title" content="Centurim Health | Automated Revenue Integrity for SNFs" />
@@ -138,6 +141,17 @@
 <link rel="stylesheet" href="/index.css">
 </head>
   <body class="text-slate-600 antialiased selection:bg-medical-100 selection:text-medical-900 font-medium">
+    <!-- Hidden form for Netlify Forms detection -->
+    <form name="audit-request" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="job_title" />
+      <input type="text" name="facility_name" />
+      <input type="text" name="bed_count" />
+      <input type="text" name="emr" />
+      <input type="text" name="audit_scope" />
+    </form>
+
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
