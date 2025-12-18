@@ -80,7 +80,7 @@ const ProcessFlow = () => (
                     </div>
                     {/* text-xl -> text-lg, font-bold -> font-medium */}
                     <h3 className="text-lg font-medium text-[#0B1120] mb-3">Secure Ingest</h3>
-                    <p className="text-slate-600 text-lg leading-relaxed">
+                    <p className="text-slate-600 text-base leading-relaxed">
                         Upload raw PDFs of any size via our secure, encrypted tunnel. We handle intake packets, hand-written notes, and imaging discs.
                     </p>
                 </div>
@@ -108,7 +108,7 @@ const ProcessFlow = () => (
                          </div>
                     </div>
                     <h3 className="text-lg font-medium text-[#0B1120] mb-3">Neural Analysis</h3>
-                    <p className="text-slate-600 text-lg leading-relaxed">
+                    <p className="text-slate-600 text-base leading-relaxed">
                         The engine classifies documents, reads clinical shorthand, and extracts key events into a structured dataset automatically.
                     </p>
                 </div>
@@ -135,7 +135,7 @@ const ProcessFlow = () => (
                          </div>
                     </div>
                     <h3 className="text-lg font-medium text-[#0B1120] mb-3">Review & Export</h3>
-                    <p className="text-slate-600 text-lg leading-relaxed">
+                    <p className="text-slate-600 text-base leading-relaxed">
                         Receive a citation-backed chronology. Click any fact to instantly verify the source page, then export to Word or PDF.
                     </p>
                 </div>
@@ -183,7 +183,7 @@ const ReadingLayer = () => (
                 {/* UI Snippet */}
                 <div className="bg-slate-50 rounded-xl border border-slate-100 p-6">
                     <div className="mb-4 pb-4 border-b border-slate-200 border-dashed">
-                        <div className="text-lg text-slate-400 font-medium uppercase mb-2">Source (Handwriting)</div>
+                        <div className="text-base text-slate-400 font-medium uppercase mb-2">Source (Handwriting)</div>
                         <p className="font-serif italic text-slate-500 text-lg opacity-70">"Pt c/o severe lwr back pn radiating to L leg..."</p>
                     </div>
                     <div>
@@ -355,7 +355,7 @@ const ThinkingLayer = () => (
                 </p>
                 {/* UI Snippet */}
                 <div className="bg-slate-50 rounded-xl border border-slate-100 p-4">
-                     <div className="flex items-center justify-between text-lg text-slate-500 mb-2 px-2">
+                     <div className="flex items-center justify-between text-base text-slate-500 mb-2 px-2">
                          <span>Nov 01</span>
                          <span>Feb 15</span>
                      </div>
@@ -524,7 +524,7 @@ const PlatformSecurity = () => (
                         <h3 className="text-lg md:text-xl font-medium text-white">Ephemeral Processing</h3>
                     </div>
                     <p className="text-slate-400 leading-relaxed mb-2 font-medium text-lg md:text-lg uppercase">Zero Retention Architecture</p>
-                    <p className="text-slate-300 leading-relaxed text-lg">
+                    <p className="text-slate-300 leading-relaxed text-base">
                         We minimize your liability exposure by not holding your client data. Source files are processed in ephemeral memory and are permanently deleted from our storage buckets after a secure retention window.
                     </p>
                  </div>
@@ -535,7 +535,7 @@ const PlatformSecurity = () => (
                         <h3 className="text-lg md:text-xl font-medium text-white">Sovereign Infrastructure</h3>
                     </div>
                     <p className="text-slate-400 leading-relaxed mb-2 font-medium text-lg md:text-lg uppercase">US East 1 Residency</p>
-                    <p className="text-slate-300 leading-relaxed text-lg">
+                    <p className="text-slate-300 leading-relaxed text-base">
                         We guarantee that all data processing and temporary storage occur exclusively within AWS data centers in the United States. Your client data remains within US jurisdiction at all times.
                     </p>
                  </div>
@@ -546,7 +546,7 @@ const PlatformSecurity = () => (
                         <h3 className="text-lg md:text-xl font-medium text-white">Attorney Work Product Support</h3>
                     </div>
                     <p className="text-slate-400 leading-relaxed mb-2 font-medium text-lg md:text-lg uppercase">Confidentiality Protocols</p>
-                    <p className="text-slate-300 leading-relaxed text-lg">
+                    <p className="text-slate-300 leading-relaxed text-base">
                         Our architecture is designed to support strict non disclosure requirements. We act as a silent vendor to ensure your work product remains privileged and secure.
                     </p>
                  </div>

@@ -31,7 +31,7 @@ export const PipelineSteps: React.FC = () => {
                          </div>
                     </div>
                     <h3 className="text-lg font-medium text-[#0B1120] mb-3">Secure Ingestion</h3>
-                    <p className="text-slate-600 text-lg leading-relaxed">
+                    <p className="text-slate-600 text-base leading-relaxed">
                         Upload raw medical records via our encrypted tunnel. We accept files of any size via SFTP or API.
                     </p>
                 </div>
@@ -62,7 +62,7 @@ export const PipelineSteps: React.FC = () => {
                          </div>
                     </div>
                     <h3 className="text-lg font-medium text-[#0B1120] mb-3">Clinical Analysis</h3>
-                    <p className="text-slate-600 text-lg leading-relaxed">
+                    <p className="text-slate-600 text-base leading-relaxed">
                         The engine classifies documents and extracts clinical events using deterministic logic, not generative guesswork.
                     </p>
                 </div>
@@ -92,7 +92,7 @@ export const PipelineSteps: React.FC = () => {
                          </div>
                     </div>
                     <h3 className="text-lg font-medium text-[#0B1120] mb-3">Ephemeral Purge</h3>
-                    <p className="text-slate-600 text-lg leading-relaxed">
+                    <p className="text-slate-600 text-base leading-relaxed">
                         Zero retention policy. Files are automatically purged from our servers after the analysis window closes.
                     </p>
                 </div>

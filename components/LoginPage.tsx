@@ -28,7 +28,13 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onNavigate }) => {
         <div className="bg-white py-10 px-6 shadow-xl shadow-slate-200/50 border border-slate-100 sm:rounded-2xl sm:px-12">
             
             <div className="mb-10 text-center">
-                 <div className="w-12 h-12 bg-[#0B1120] text-white rounded-xl flex items-center justify-center text-xl font-medium mx-auto mb-6 shadow-lg shadow-slate-900/20">C</div>
+                 <div className="flex justify-center mb-6">
+                     <img
+                         src="/Centurim_for_light_logo.svg"
+                         alt="Centurim Logo"
+                         className="h-10 w-auto"
+                     />
+                 </div>
                  <h2 className="text-2xl font-medium text-[#0B1120] tracking-tight mb-2">Client Login</h2>
             </div>
 

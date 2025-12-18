@@ -70,7 +70,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                        <div className="flex gap-8">
                            <div className="w-32 shrink-0 pt-1">
                                <div className="text-lg font-medium text-slate-900">Oct 12, 2023</div>
-                               <div className="text-lg text-slate-500 font-medium uppercase tracking-wide mt-2">14:30 PM</div>
+                               <div className="text-base text-slate-500 font-medium uppercase tracking-wide mt-2">14:30 PM</div>
                            </div>
                            <div className="flex-1 pb-10 border-l-2 border-slate-100 pl-8 relative">
                                <div className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-white border-4 border-[#2563EB]"></div>
@@ -89,7 +89,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                        <div className="flex gap-8">
                            <div className="w-32 shrink-0 pt-1">
                                <div className="text-lg font-medium text-slate-900">Oct 14, 2023</div>
-                               <div className="text-lg text-slate-500 font-medium uppercase tracking-wide mt-2">09:15 AM</div>
+                               <div className="text-base text-slate-500 font-medium uppercase tracking-wide mt-2">09:15 AM</div>
                            </div>
                            <div className="flex-1 pl-8 relative">
                                <div className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-white border-4 border-slate-300"></div>

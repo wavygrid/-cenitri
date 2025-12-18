@@ -16,12 +16,13 @@ type RoleType = 'legal' | 'healthcare';
 export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
   const [role, setRole] = useState<RoleType>('legal'); // Default to legal to show fields immediately
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Netlify Form Submission
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     const form = e.currentTarget;
     const formData = new FormData(form);
 
@@ -30,9 +31,14 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: new URLSearchParams(formData as any).toString(),
     })
-      .then(() => alert('Request received. A senior analyst will contact you shortly to confirm requirements.'))
-      .catch((error) => alert(error))
-      .finally(() => setIsSubmitting(false));
+      .then(() => {
+        setIsSubmitted(true);
+        setIsSubmitting(false);
+      })
+      .catch((error) => {
+        alert('There was an error submitting your request. Please try again or contact us directly.');
+        setIsSubmitting(false);
+      });
   };
 
   return (
@@ -54,7 +60,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                   </p>
 
                   <div className="space-y-8 mb-16">
-                      <p className="text-slate-600 text-lg leading-relaxed">
+                      <p className="text-slate-600 text-base leading-relaxed">
                           We don't do hard pitches. Let's have a short, honest conversation about your document volume and see if our architecture fits your workflow. You'll walk away with a clear idea of what's possible.
                       </p>
                   </div>
@@ -72,7 +78,27 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               {/* RIGHT COLUMN: The Modern Form */}
               <div className="w-full lg:w-1/2">
                   <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 md:p-10">
-                      <form 
+                      {isSubmitted ? (
+                          <div className="text-center py-12">
+                              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                                  </svg>
+                              </div>
+                              <h3 className="text-2xl font-medium text-[#0B1120] mb-4">Request Received</h3>
+                              <p className="text-base text-slate-600 mb-8 leading-relaxed">
+                                  A senior analyst will contact you shortly to confirm requirements and discuss next steps.
+                              </p>
+                              <Button
+                                  variant="outline"
+                                  className="h-12 px-8 text-base"
+                                  onClick={() => onNavigate?.('home')}
+                              >
+                                  Return to Home
+                              </Button>
+                          </div>
+                      ) : (
+                          <form 
                           name="client-intake" 
                           method="POST" 
                           data-netlify="true" 
@@ -158,12 +184,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                               <Button variant="primary" className="w-full h-14 text-base font-bold shadow-lg" disabled={isSubmitting}>
                                   {isSubmitting ? 'Sending Request...' : 'Schedule Demo'}
                               </Button>
-                              <p className="text-center text-lg text-slate-500 mt-6">
+                              <p className="text-center text-base text-slate-500 mt-6">
                                   By submitting this form, you agree to our privacy policy. Your data is encrypted end-to-end.
                               </p>
                           </div>
 
                       </form>
+                      )}
                   </div>
               </div>
           </div>

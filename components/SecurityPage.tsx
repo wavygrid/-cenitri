@@ -52,15 +52,15 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Hosting Provider:</strong> All services are hosted on Amazon Web Services (AWS).</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Hosting Provider:</strong> All services are hosted on Amazon Web Services (AWS).</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Region Locking:</strong> All computational workloads, storage buckets, and database instances are provisioned exclusively within the US-East-1 (Northern Virginia) region.</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Region Locking:</strong> All computational workloads, storage buckets, and database instances are provisioned exclusively within the US-East-1 (Northern Virginia) region.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-blue-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Storage Location:</strong> Customer data is stored and processed exclusively within US data centers.</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Storage Location:</strong> Customer data is stored and processed exclusively within US data centers.</span>
               </li>
             </ul>
           </div>
@@ -83,19 +83,19 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-teal-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Ingestion:</strong> Files are uploaded via secure, presigned URLs directly to isolated storage buckets.</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Ingestion:</strong> Files are uploaded via secure, presigned URLs directly to isolated storage buckets.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-teal-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Processing:</strong> Analysis occurs in serverless, stateless compute environments (AWS Lambda).</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Processing:</strong> Analysis occurs in serverless, stateless compute environments (AWS Lambda).</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-teal-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Destruction:</strong> Source documents are permanently deleted from our infrastructure immediately upon the generation of the variance report.</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Destruction:</strong> Source documents are permanently deleted from our infrastructure immediately upon the generation of the variance report.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-teal-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">No Model Training:</strong> We do not use client Protected Health Information (PHI) to train foundational Artificial Intelligence models.</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">No Model Training:</strong> We do not use client Protected Health Information (PHI) to train foundational Artificial Intelligence models.</span>
               </li>
             </ul>
           </div>
@@ -118,11 +118,11 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-purple-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Data at Rest:</strong> All storage volumes are encrypted using AES-256 (Advanced Encryption Standard) via AWS Key Management Service (KMS).</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Data at Rest:</strong> All storage volumes are encrypted using AES-256 (Advanced Encryption Standard) via AWS Key Management Service (KMS).</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-purple-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Data in Transit:</strong> All network traffic is secured via TLS 1.3 (Transport Layer Security). We enforce HTTPS only access points.</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Data in Transit:</strong> All network traffic is secured via TLS 1.3 (Transport Layer Security). We enforce HTTPS only access points.</span>
               </li>
             </ul>
           </div>
@@ -141,16 +141,16 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
             <h3 className="text-xl font-bold text-[#0B1120] mb-4">HIPAA Alignment</h3>
             <div className="mb-6 bg-slate-50 p-6 rounded-lg border border-slate-200">
               <h4 className="text-base font-bold text-slate-900 mb-2 uppercase">Shared Responsibility Model</h4>
-              <p className="text-slate-600 text-lg">Centurim operates as a Business Associate under HIPAA regulations.</p>
+              <p className="text-slate-600 text-base">Centurim operates as a Business Associate under HIPAA regulations.</p>
             </div>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-emerald-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Contractual Liability:</strong> We execute a comprehensive Business Associate Agreement (BAA) with all Covered Entities, assuming contractual liability for data processing within our enclave.</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Contractual Liability:</strong> We execute a comprehensive Business Associate Agreement (BAA) with all Covered Entities, assuming contractual liability for data processing within our enclave.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-emerald-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Infrastructure:</strong> Our platform leverages AWS services that are covered under our upstream BAA with Amazon Web Services.</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Infrastructure:</strong> Our platform leverages AWS services that are covered under our upstream BAA with Amazon Web Services.</span>
               </li>
             </ul>
           </div>
@@ -170,8 +170,8 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
                 <h3 className="text-xl font-bold text-[#0B1120] mb-4">Defense in Depth</h3>
                 <h4 className="text-lg font-bold text-slate-800 mb-2">Access Control</h4>
                 <ul className="space-y-2 mb-4 pl-4 border-l-2 border-slate-100">
-                    <li className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Least Privilege:</strong> System components operate with the minimum necessary permissions.</li>
-                    <li className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Authentication:</strong> We utilize enterprise grade identity management with mandatory Multi Factor Authentication (MFA) for all administrative access.</li>
+                    <li className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Least Privilege:</strong> System components operate with the minimum necessary permissions.</li>
+                    <li className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Authentication:</strong> We utilize enterprise grade identity management with mandatory Multi Factor Authentication (MFA) for all administrative access.</li>
                 </ul>
             </div>
             
@@ -205,15 +205,15 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-indigo-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Device Encryption:</strong> All developer workstations are encrypted and monitored.</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Device Encryption:</strong> All developer workstations are encrypted and monitored.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-indigo-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Secure Access:</strong> Administrative access to the cloud environment is restricted to secure VPN tunnels originating from authorized IP addresses.</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Secure Access:</strong> Administrative access to the cloud environment is restricted to secure VPN tunnels originating from authorized IP addresses.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-indigo-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Confidentiality:</strong> All personnel are bound by strict Non-Disclosure Agreements (NDAs) and confidentiality covenants.</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Confidentiality:</strong> All personnel are bound by strict Non-Disclosure Agreements (NDAs) and confidentiality covenants.</span>
               </li>
             </ul>
           </div>
@@ -233,11 +233,11 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-red-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Static Analysis:</strong> Codebases are scanned for vulnerabilities during every deployment cycle.</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Static Analysis:</strong> Codebases are scanned for vulnerabilities during every deployment cycle.</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircleIcon className="w-5 h-5 text-red-600 mt-1 shrink-0" />
-                <span className="text-slate-700 text-lg font-medium"><strong className="text-slate-900">Dependency Scanning:</strong> We monitor third party libraries for known CVEs (Common Vulnerabilities and Exposures) and patch immediately.</span>
+                <span className="text-slate-700 text-base font-medium"><strong className="text-slate-900">Dependency Scanning:</strong> We monitor third party libraries for known CVEs (Common Vulnerabilities and Exposures) and patch immediately.</span>
               </li>
             </ul>
           </div>

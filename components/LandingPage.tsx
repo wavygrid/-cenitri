@@ -44,7 +44,7 @@ const VisualCitation = () => (
               <div className="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-bold text-lg">01</div>
               <div className="flex-1">
                   <p className="text-base font-medium text-slate-900 mb-1">Fracture of L4 Vertebrae</p>
-                  <p className="text-lg text-slate-500">Confirmed via MRI imaging.</p>
+                  <p className="text-base text-slate-500">Confirmed via MRI imaging.</p>
               </div>
           </div>
           <div className="pl-12">
@@ -92,7 +92,7 @@ const VisualUpload = () => (
                   <ArrowRightIcon className="w-5 h-5 -rotate-90" />
               </div>
               <p className="text-base font-medium text-slate-900">Drag & Drop Medical Records</p>
-              <p className="text-lg text-slate-500 mt-1">Supports PDF, TIFF, JPEG</p>
+              <p className="text-base text-slate-500 mt-1">Supports PDF, TIFF, JPEG</p>
           </div>
           <div className="mt-4 flex justify-between items-center">
               <div className="flex -space-x-2">
@@ -169,8 +169,8 @@ const VisualRevenueSnippet = () => (
           <div className="bg-emerald-500 w-2/3 h-full rounded-full"></div>
       </div>
       <div className="flex justify-between mt-2">
-          <div className="text-lg text-slate-400">Identified</div>
-          <div className="text-lg text-slate-400">Captured</div>
+          <div className="text-base text-slate-400">Identified</div>
+          <div className="text-base text-slate-400">Captured</div>
       </div>
    </div>
 );
@@ -248,7 +248,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
                 Turn Unstructured Medical Records into <span className="text-[#2563EB]">Clinical Intelligence</span>
               </h1>
               {/* Subheader 18px */}
-              <p className="text-lg text-slate-600 mb-10 leading-relaxed font-medium">
+              <p className="text-base text-slate-600 mb-10 leading-relaxed font-medium">
                 We convert thousands of pages of raw medical PDFs into structured chronologies and variance reports. Our autonomous engine extracts clinical facts with review ready precision for legal and healthcare workflows.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -293,7 +293,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
                            <div className="flex gap-6">
                                <div className="w-20 shrink-0 text-right">
                                    <div className="text-base font-bold text-slate-900">Oct 12</div>
-                                   <div className="text-lg text-slate-400">2023</div>
+                                   <div className="text-base text-slate-400">2023</div>
                                </div>
                                <div className="flex-1 border-l-2 border-blue-100 pl-6 pb-6 relative">
                                    <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-blue-600"></div>
@@ -309,7 +309,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
                            <div className="flex gap-6">
                                <div className="w-20 shrink-0 text-right">
                                    <div className="text-base font-bold text-slate-900">Oct 14</div>
-                                   <div className="text-lg text-slate-400">2023</div>
+                                   <div className="text-base text-slate-400">2023</div>
                                </div>
                                <div className="flex-1 border-l-2 border-slate-100 pl-6 relative">
                                    <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-slate-300"></div>

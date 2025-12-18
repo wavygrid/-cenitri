@@ -33,8 +33,10 @@
     <meta property="twitter:image" content="/images/og-master.png" />
     <meta property="twitter:creator" content="@centurim" />
 
-    <!-- Local Fonts -->
-    <link rel="stylesheet" href="/fonts/fonts.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -42,7 +44,7 @@
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Switzer', 'system-ui', 'sans-serif'],
+              sans: ['Inter', 'system-ui', 'sans-serif'],
               heading: ['Manrope', 'system-ui', 'sans-serif'],
             },
           },
@@ -52,11 +54,11 @@
 
     <style>
       * {
-        font-family: 'Switzer', system-ui, sans-serif;
+        font-family: 'Inter', system-ui, sans-serif;
       }
 
       body {
-        font-family: 'Switzer', system-ui, sans-serif;
+        font-family: 'Inter', system-ui, sans-serif;
         background-color: #FFFFFF;
         color: #0B1120;
         -webkit-font-smoothing: antialiased;
@@ -70,7 +72,7 @@
       }
 
       button {
-        font-family: 'Switzer', system-ui, sans-serif;
+        font-family: 'Inter', system-ui, sans-serif;
       }
     </style>
   <script type="importmap">
@@ -88,6 +90,19 @@
 </head>
   <body>
     <div id="root"></div>
+
+    <!-- Hidden Netlify Form for Detection -->
+    <form name="client-intake" netlify netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="client-intake" />
+      <input type="text" name="role" />
+      <input type="text" name="first-name" />
+      <input type="text" name="last-name" />
+      <input type="email" name="email" />
+      <input type="text" name="company" />
+      <input type="text" name="volume" />
+      <textarea name="message"></textarea>
+    </form>
+
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>

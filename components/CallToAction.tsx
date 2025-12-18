@@ -14,7 +14,7 @@ export const CallToAction: React.FC<CallToActionProps> = ({ onNavigate }) => {
           <h2 className="text-2xl md:text-3xl font-medium tracking-tight text-white mb-6">
             Initiate Your Review
           </h2>
-          <p className="text-lg text-slate-400 mb-10 leading-relaxed max-w-2xl mx-auto font-medium">
+          <p className="text-base text-slate-400 mb-10 leading-relaxed max-w-2xl mx-auto font-medium">
             Every day a file sits unread is a day of delayed revenue. Clear your desk and move your cases forward with automated intelligence.
           </p>
           <div className="flex justify-center">

@@ -134,7 +134,7 @@ const HealthcareProblem = () => (
                     <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
                        <div className="h-full w-2/3 bg-red-500"></div>
                     </div>
-                    <div className="text-lg text-slate-500 text-right">Missed NTA Comorbidity</div>
+                    <div className="text-base text-slate-500 text-right">Missed NTA Comorbidity</div>
                  </div>
               </div>
            </div>
@@ -356,7 +356,7 @@ const HealthcarePricing = ({ onNavigate }: { onNavigate?: (page: PageView) => vo
 
                <div className="mb-8 pt-8 border-t border-slate-100">
                   <div className="text-2xl font-medium text-[#0B1120]">$250 <span className="text-base font-normal text-slate-500">Pilot Fee</span></div>
-                  <p className="text-lg text-slate-400 mt-2">(Credited toward first month)</p>
+                  <p className="text-base text-slate-400 mt-2">(Credited toward first month)</p>
                </div>
 
                <Button 
@@ -390,7 +390,7 @@ const HealthcarePricing = ({ onNavigate }: { onNavigate?: (page: PageView) => vo
                </ul>
 
                <div className="mb-8 pt-8 border-t border-slate-800">
-                  <div className="text-lg text-slate-400 mb-1">Packages starting at</div>
+                  <div className="text-base text-slate-400 mb-1">Packages starting at</div>
                   <div className="text-2xl font-medium">$2,250 <span className="text-base font-normal text-slate-400">/ month</span></div>
                </div>
 

@@ -45,7 +45,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         </div>
 
-        <div className="pt-8 border-t border-slate-800 text-lg text-slate-500 font-medium leading-relaxed">
+        <div className="pt-8 border-t border-slate-800 text-base text-slate-500 font-medium leading-relaxed">
           <p className="max-w-3xl">
             Disclaimer: Centurim provides automated data extraction and analysis services. We do not provide legal advice or medical diagnoses. All reports are draft work products intended for professional review and verification.
           </p>

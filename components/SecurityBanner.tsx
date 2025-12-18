@@ -67,15 +67,15 @@ export const SecurityBanner: React.FC<SecurityBannerProps> = ({ onNavigate }) =>
 
         {/* Text Area */}
         <div className="flex-1 text-center md:text-left">
-          <h3 className="text-lg md:text-base font-bold text-[#0B1120] mb-0.5">Security and Compliance</h3>
-          <p className="text-lg text-slate-500 font-medium">Enterprise-grade security and industry-standard certifications.</p>
+          <h3 className="text-sm font-bold text-[#0B1120] mb-0.5">Security and Compliance</h3>
+          <p className="text-sm text-slate-500 font-medium">Enterprise-grade security and industry-standard certifications.</p>
         </div>
 
         {/* Action Button */}
         <div className="shrink-0 w-full md:w-auto">
           <button
             onClick={() => onNavigate?.('security')}
-            className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 border border-slate-200 rounded-xl bg-white hover:bg-slate-50 text-slate-900 text-lg font-bold transition-all shadow-sm group"
+            className="w-full md:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 border border-slate-200 rounded-xl bg-white hover:bg-slate-50 text-slate-900 text-sm font-bold transition-all shadow-sm group"
           >
             Learn more
             <ExternalLinkIcon className="w-4 h-4 text-slate-400 group-hover:text-slate-900 transition-colors" />

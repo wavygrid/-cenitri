@@ -249,7 +249,7 @@ const PricingSection = ({ onNavigate }: { onNavigate?: (page: PageView) => void 
                         </div>
                         <div className="mb-8">
                             <div className="text-4xl font-medium text-[#0B1120]">$49 <span className="text-base font-normal text-slate-400">/ Case</span></div>
-                            <p className="text-lg text-slate-400 mt-2">Up to 500 pages per review</p>
+                            <p className="text-base text-slate-400 mt-2">Up to 500 pages per review</p>
                         </div>
                         <Button variant="outline" className="w-full mb-8" onClick={() => onNavigate?.('contact')}>Purchase Credits</Button>
                         <div className="space-y-3">
@@ -267,7 +267,7 @@ const PricingSection = ({ onNavigate }: { onNavigate?: (page: PageView) => void 
                         </div>
                         <div className="mb-8">
                             <div className="text-4xl font-medium">$199 <span className="text-base font-normal text-slate-400">/ Bundle</span></div>
-                            <p className="text-lg text-slate-500 mt-2">Credits never expire</p>
+                            <p className="text-base text-slate-500 mt-2">Credits never expire</p>
                         </div>
                         <Button variant="primary" className="w-full mb-8 bg-[#2563EB] hover:bg-blue-600 border-transparent" onClick={() => onNavigate?.('contact')}>Select Bundle</Button>
                         <div className="space-y-3">
@@ -284,7 +284,7 @@ const PricingSection = ({ onNavigate }: { onNavigate?: (page: PageView) => void 
                         </div>
                         <div className="mb-8">
                             <div className="text-4xl font-medium text-[#0B1120]">Custom</div>
-                            <p className="text-lg text-slate-400 mt-2">Volume-tiered pricing</p>
+                            <p className="text-base text-slate-400 mt-2">Volume-tiered pricing</p>
                         </div>
                         <Button variant="outline" className="w-full mb-8 border-slate-300" onClick={() => onNavigate?.('contact')}>Contact Engineering</Button>
                         <div className="space-y-3">
@@ -395,7 +395,7 @@ const LegalGuide = () => (
                                 <span className="w-2 h-2 rounded-full bg-teal-400"></span>
                                 Our Authority
                              </h4>
-                             <p className="text-lg text-slate-400 leading-relaxed">
+                             <p className="text-base text-slate-400 leading-relaxed">
                                 Our engine processes thousands of pages of complex clinical data using deterministic logic.
                              </p>
                         </div>
@@ -404,7 +404,7 @@ const LegalGuide = () => (
                                 <span className="w-2 h-2 rounded-full bg-blue-400"></span>
                                 Data Sovereignty
                              </h4>
-                             <p className="text-lg text-slate-400 leading-relaxed">
+                             <p className="text-base text-slate-400 leading-relaxed">
                                 We operate on a secure enclave architecture that ensures client confidentiality.
                              </p>
                         </div>
