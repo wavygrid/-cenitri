@@ -29,8 +29,8 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
             </p>
 
             <div className="my-8 bg-slate-50 border-l-4 border-[#0B1120] p-6 rounded-r-lg">
-              <h4 className="text-[#0B1120] font-bold uppercase text-lg mb-2 mt-0">Important Notice Regarding Protected Health Information (PHI)</h4>
-              <p className="text-lg mb-0">
+              <h4 className="text-[#0B1120] font-bold uppercase text-sm mb-2 mt-0">Important Notice Regarding Protected Health Information (PHI)</h4>
+              <p className="text-sm mb-0">
                 IF YOU ARE A COVERED ENTITY OR BUSINESS ASSOCIATE UNDER HIPAA, YOUR USE OF THE SERVICE IS GOVERNED BY THE BUSINESS ASSOCIATE AGREEMENT (BAA) EXECUTED BETWEEN YOU AND CENTURIM. IN THE EVENT OF A CONFLICT BETWEEN THIS PRIVACY POLICY AND THE BAA, THE TERMS OF THE BAA SHALL CONTROL REGARDING THE HANDLING OF PHI.
               </p>
             </div>

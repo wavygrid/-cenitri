@@ -12,8 +12,8 @@ export const Button: React.FC<ButtonProps> = ({
   className = '', 
   ...props 
 }) => {
-  // Reverted to text-lg/base font-bold (standard UI size)
-  const baseStyles = "inline-flex items-center justify-center px-6 py-3 text-lg font-bold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 focus:ring-offset-white disabled:opacity-50 disabled:pointer-events-none rounded-lg active:scale-[0.98] tracking-tight";
+  // Reverted to text-sm/base font-bold (standard UI size)
+  const baseStyles = "inline-flex items-center justify-center px-6 py-3 text-sm font-bold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#2563EB] focus:ring-offset-2 focus:ring-offset-white disabled:opacity-50 disabled:pointer-events-none rounded-lg active:scale-[0.98] tracking-tight";
   
   const styling = {
       primary: "bg-[#2563EB] text-white hover:bg-[#1d4ed8] border border-transparent shadow-md hover:shadow-lg",

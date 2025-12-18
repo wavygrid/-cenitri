@@ -71,7 +71,7 @@ const ProcessFlow = () => (
             <div className="group relative">
                 <div className="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 h-full flex flex-col items-center text-center z-10 relative">
                     <div className="mb-6">
-                        <span className="text-lg font-medium tracking-widest text-[#2563EB] uppercase bg-blue-50 px-3 py-1 rounded-full border border-blue-100">Step 01</span>
+                        <span className="text-xs font-medium tracking-widest text-[#2563EB] uppercase bg-blue-50 px-3 py-1 rounded-full border border-blue-100">Step 01</span>
                     </div>
                     <div className="w-24 h-24 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 border border-slate-100 group-hover:scale-110 transition-transform duration-300">
                          <div className="w-12 h-12 border-2 border-dashed border-slate-300 rounded-lg flex items-center justify-center bg-white">
@@ -80,7 +80,7 @@ const ProcessFlow = () => (
                     </div>
                     {/* text-xl -> text-lg, font-bold -> font-medium */}
                     <h3 className="text-lg font-medium text-[#0B1120] mb-3">Secure Ingest</h3>
-                    <p className="text-slate-600 text-lg leading-relaxed">
+                    <p className="text-slate-600 text-sm leading-relaxed">
                         Upload raw PDFs of any size via our secure, encrypted tunnel. We handle intake packets, hand-written notes, and imaging discs.
                     </p>
                 </div>
@@ -95,7 +95,7 @@ const ProcessFlow = () => (
             <div className="group relative">
                 <div className="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 h-full flex flex-col items-center text-center z-10 relative">
                     <div className="mb-6">
-                        <span className="text-lg font-medium tracking-widest text-[#2563EB] uppercase bg-blue-50 px-3 py-1 rounded-full border border-blue-100">Step 02</span>
+                        <span className="text-xs font-medium tracking-widest text-[#2563EB] uppercase bg-blue-50 px-3 py-1 rounded-full border border-blue-100">Step 02</span>
                     </div>
                     <div className="w-24 h-24 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 border border-slate-100 group-hover:scale-110 transition-transform duration-300">
                          <div className="w-14 space-y-2 bg-white p-2 rounded-lg shadow-sm border border-slate-100">
@@ -108,7 +108,7 @@ const ProcessFlow = () => (
                          </div>
                     </div>
                     <h3 className="text-lg font-medium text-[#0B1120] mb-3">Neural Analysis</h3>
-                    <p className="text-slate-600 text-lg leading-relaxed">
+                    <p className="text-slate-600 text-sm leading-relaxed">
                         The engine classifies documents, reads clinical shorthand, and extracts key events into a structured dataset automatically.
                     </p>
                 </div>
@@ -123,7 +123,7 @@ const ProcessFlow = () => (
             <div className="group relative">
                 <div className="bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-all duration-300 h-full flex flex-col items-center text-center z-10 relative">
                     <div className="mb-6">
-                        <span className="text-lg font-medium tracking-widest text-teal-600 uppercase bg-teal-50 px-3 py-1 rounded-full border border-teal-100">Step 03</span>
+                        <span className="text-xs font-medium tracking-widest text-teal-600 uppercase bg-teal-50 px-3 py-1 rounded-full border border-teal-100">Step 03</span>
                     </div>
                     <div className="w-24 h-24 bg-slate-50 rounded-2xl flex items-center justify-center mb-6 border border-slate-100 group-hover:scale-110 transition-transform duration-300">
                          <div className="w-10 h-14 bg-white border border-slate-200 rounded shadow-sm flex flex-col p-1.5 items-center">
@@ -135,7 +135,7 @@ const ProcessFlow = () => (
                          </div>
                     </div>
                     <h3 className="text-lg font-medium text-[#0B1120] mb-3">Review & Export</h3>
-                    <p className="text-slate-600 text-lg leading-relaxed">
+                    <p className="text-slate-600 text-sm leading-relaxed">
                         Receive a citation-backed chronology. Click any fact to instantly verify the source page, then export to Word or PDF.
                     </p>
                 </div>
@@ -157,7 +157,7 @@ const ReadingLayer = () => (
              </div>
              {/* text-4xl -> text-3xl */}
              <h2 className="text-2xl md:text-3xl font-medium text-[#0B1120] mb-6">Core Extraction Engine</h2>
-             <div className="text-lg font-medium text-slate-500 uppercase tracking-widest mb-6">The Reading Layer</div>
+             <div className="text-sm font-medium text-slate-500 uppercase tracking-widest mb-6">The Reading Layer</div>
              <p className="text-slate-600 leading-relaxed text-xl font-medium">
                 Deciphering the chaos of raw medical records. Our optical character recognition is tuned to process clinical shorthand and handwritten notes that standard text parsers miss.
              </p>
@@ -174,7 +174,7 @@ const ReadingLayer = () => (
                    </div>
                    <div>
                       <h3 className="text-xl font-medium text-[#0B1120]">Clinical Handwriting Recognition</h3>
-                      <p className="text-lg font-medium text-slate-400 uppercase mt-1">Decipher Physician Notes</p>
+                      <p className="text-sm font-medium text-slate-400 uppercase mt-1">Decipher Physician Notes</p>
                    </div>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-xl mb-8">
@@ -183,11 +183,11 @@ const ReadingLayer = () => (
                 {/* UI Snippet */}
                 <div className="bg-slate-50 rounded-xl border border-slate-100 p-6">
                     <div className="mb-4 pb-4 border-b border-slate-200 border-dashed">
-                        <div className="text-lg text-slate-400 font-medium uppercase mb-2">Source (Handwriting)</div>
+                        <div className="text-xs text-slate-400 font-medium uppercase mb-2">Source (Handwriting)</div>
                         <p className="font-serif italic text-slate-500 text-lg opacity-70">"Pt c/o severe lwr back pn radiating to L leg..."</p>
                     </div>
                     <div>
-                        <div className="text-lg text-[#2563EB] font-medium uppercase mb-2">Digitized Output</div>
+                        <div className="text-xs text-[#2563EB] font-medium uppercase mb-2">Digitized Output</div>
                         <p className="font-sans text-slate-900 text-lg font-medium">"Patient complains of severe lower back pain radiating to Left leg"</p>
                     </div>
                 </div>
@@ -201,7 +201,7 @@ const ReadingLayer = () => (
                    </div>
                    <div>
                       <h3 className="text-xl font-medium text-[#0B1120]">Intelligent Document Sorting</h3>
-                      <p className="text-lg font-medium text-slate-400 uppercase mt-1">Contextual Classification</p>
+                      <p className="text-sm font-medium text-slate-400 uppercase mt-1">Contextual Classification</p>
                    </div>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-xl mb-8">
@@ -214,14 +214,14 @@ const ReadingLayer = () => (
                              <div className="w-8 h-8 bg-blue-50 rounded flex items-center justify-center text-blue-600"><DocumentIcon className="w-4 h-4"/></div>
                              <span className="font-medium text-slate-700">Scan_00492.pdf</span>
                         </div>
-                        <span className="px-3 py-1 bg-blue-100 text-blue-700 text-lg font-medium rounded-full">Radiology</span>
+                        <span className="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">Radiology</span>
                     </div>
                     <div className="bg-white p-3 rounded-lg border border-slate-200 flex justify-between items-center shadow-sm opacity-75">
                         <div className="flex items-center gap-3">
                              <div className="w-8 h-8 bg-purple-50 rounded flex items-center justify-center text-purple-600"><DocumentIcon className="w-4 h-4"/></div>
                              <span className="font-medium text-slate-700">Scan_00493.pdf</span>
                         </div>
-                        <span className="px-3 py-1 bg-purple-100 text-purple-700 text-lg font-medium rounded-full">Operative Report</span>
+                        <span className="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-medium rounded-full">Operative Report</span>
                     </div>
                 </div>
              </div>
@@ -234,14 +234,14 @@ const ReadingLayer = () => (
                    </div>
                    <div>
                       <h3 className="text-xl font-medium text-[#0B1120]">Noise Filtering</h3>
-                      <p className="text-lg font-medium text-slate-400 uppercase mt-1">Relevance Detection</p>
+                      <p className="text-sm font-medium text-slate-400 uppercase mt-1">Relevance Detection</p>
                    </div>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-xl mb-8">
                    Medical files contain significant redundancy. Our system filters out administrative fluff, duplicate fax headers, and normal findings to isolate the pathology that drives case value.
                 </p>
                 {/* UI Snippet */}
-                <div className="bg-slate-50 rounded-xl border border-slate-100 p-6 font-mono text-lg">
+                <div className="bg-slate-50 rounded-xl border border-slate-100 p-6 font-mono text-sm">
                     <div className="text-slate-300 line-through decoration-slate-300 selection:bg-transparent">Fax Header: 2023-10-12 Mercy Hospital...</div>
                     <div className="text-slate-300 line-through decoration-slate-300 mt-2 selection:bg-transparent">Patient is well appearing, in no acute distress.</div>
                     <div className="bg-yellow-50 text-slate-900 font-medium p-2 -mx-2 my-2 rounded border border-yellow-100">
@@ -268,7 +268,7 @@ const ThinkingLayer = () => (
                 <BrainIcon className="w-6 h-6" />
              </div>
              <h2 className="text-2xl md:text-3xl font-medium text-[#0B1120] mb-6">Chronology & Analysis</h2>
-             <div className="text-lg font-medium text-slate-500 uppercase tracking-widest mb-6">The Thinking Layer</div>
+             <div className="text-sm font-medium text-slate-500 uppercase tracking-widest mb-6">The Thinking Layer</div>
              <p className="text-slate-600 leading-relaxed text-xl font-medium">
                 Structuring the timeline. We convert thousands of non-linear pages into a structured timeline, extracting dates of service to create a clear history of care.
              </p>
@@ -285,7 +285,7 @@ const ThinkingLayer = () => (
                    </div>
                    <div>
                       <h3 className="text-xl font-medium text-[#0B1120]">Automated Chronology Construction</h3>
-                      <p className="text-lg font-medium text-slate-400 uppercase mt-1">Instant Timeline Generation</p>
+                      <p className="text-sm font-medium text-slate-400 uppercase mt-1">Instant Timeline Generation</p>
                    </div>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-xl mb-8">
@@ -298,14 +298,14 @@ const ThinkingLayer = () => (
                          <div className="flex items-center gap-4">
                              <div className="w-6 h-6 rounded-full bg-slate-300 border-4 border-white shadow-sm shrink-0 z-10"></div>
                              <div className="bg-white p-3 rounded-lg border border-slate-200 shadow-sm flex-1">
-                                 <div className="text-lg font-medium text-slate-400 uppercase">Oct 12</div>
+                                 <div className="text-xs font-medium text-slate-400 uppercase">Oct 12</div>
                                  <div className="font-medium text-slate-700">ER Admission</div>
                              </div>
                          </div>
                          <div className="flex items-center gap-4">
                              <div className="w-6 h-6 rounded-full bg-[#2563EB] border-4 border-white shadow-sm shrink-0 z-10"></div>
                              <div className="bg-white p-3 rounded-lg border border-blue-200 shadow-sm flex-1">
-                                 <div className="text-lg font-medium text-blue-500 uppercase">Oct 14</div>
+                                 <div className="text-xs font-medium text-blue-500 uppercase">Oct 14</div>
                                  <div className="font-medium text-slate-900">MRI Lumbar Spine</div>
                              </div>
                          </div>
@@ -321,7 +321,7 @@ const ThinkingLayer = () => (
                    </div>
                    <div>
                       <h3 className="text-xl font-medium text-[#0B1120]">Injury & Damages Isolation</h3>
-                      <p className="text-lg font-medium text-slate-400 uppercase mt-1">Objective Fact Extraction</p>
+                      <p className="text-sm font-medium text-slate-400 uppercase mt-1">Objective Fact Extraction</p>
                    </div>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-xl mb-8">
@@ -333,8 +333,8 @@ const ThinkingLayer = () => (
                         ...radiograph demonstrates a <span className="bg-red-50 text-red-700 font-medium px-1 rounded border border-red-100">comminuted fracture</span> of the distal radius. Soft tissue swelling is noted...
                     </p>
                     <div className="mt-4 flex gap-2">
-                        <span className="px-3 py-1 bg-red-100 text-red-700 text-lg font-medium uppercase rounded-full">ICD-10: S52.5</span>
-                        <span className="px-3 py-1 bg-slate-200 text-slate-700 text-lg font-medium uppercase rounded-full">High Value</span>
+                        <span className="px-3 py-1 bg-red-100 text-red-700 text-xs font-medium uppercase rounded-full">ICD-10: S52.5</span>
+                        <span className="px-3 py-1 bg-slate-200 text-slate-700 text-xs font-medium uppercase rounded-full">High Value</span>
                     </div>
                 </div>
              </div>
@@ -347,7 +347,7 @@ const ThinkingLayer = () => (
                    </div>
                    <div>
                       <h3 className="text-xl font-medium text-[#0B1120]">Treatment Gap Detection</h3>
-                      <p className="text-lg font-medium text-slate-400 uppercase mt-1">Continuity Analysis</p>
+                      <p className="text-sm font-medium text-slate-400 uppercase mt-1">Continuity Analysis</p>
                    </div>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-xl mb-8">
@@ -355,7 +355,7 @@ const ThinkingLayer = () => (
                 </p>
                 {/* UI Snippet */}
                 <div className="bg-slate-50 rounded-xl border border-slate-100 p-4">
-                     <div className="flex items-center justify-between text-lg text-slate-500 mb-2 px-2">
+                     <div className="flex items-center justify-between text-sm text-slate-500 mb-2 px-2">
                          <span>Nov 01</span>
                          <span>Feb 15</span>
                      </div>
@@ -370,7 +370,7 @@ const ThinkingLayer = () => (
                          </div>
                      </div>
                      <div className="mt-3 flex justify-center">
-                         <div className="bg-orange-50 text-orange-700 border border-orange-200 px-3 py-1 rounded text-lg font-medium uppercase flex items-center gap-2">
+                         <div className="bg-orange-50 text-orange-700 border border-orange-200 px-3 py-1 rounded text-xs font-medium uppercase flex items-center gap-2">
                              <AlertCircleIcon className="w-3 h-3"/> 90 Day Gap Detected
                          </div>
                      </div>
@@ -394,7 +394,7 @@ const TrustLayer = () => (
                 <ShieldIcon className="w-6 h-6" />
              </div>
              <h2 className="text-2xl md:text-3xl font-medium text-[#0B1120] mb-6">Verification & Defense</h2>
-             <div className="text-lg font-medium text-slate-500 uppercase tracking-widest mb-6">The Trust Layer</div>
+             <div className="text-sm font-medium text-slate-500 uppercase tracking-widest mb-6">The Trust Layer</div>
              <p className="text-slate-600 leading-relaxed text-xl font-medium">
                 Building the argument. We do not ask you to trust a black box. Every fact is anchored to the source, and every provider is indexed for completeness.
              </p>
@@ -411,7 +411,7 @@ const TrustLayer = () => (
                    </div>
                    <div>
                       <h3 className="text-xl font-medium text-[#0B1120]">Source Anchored Citations</h3>
-                      <p className="text-lg font-medium text-slate-400 uppercase mt-1">Click to Verify</p>
+                      <p className="text-sm font-medium text-slate-400 uppercase mt-1">Click to Verify</p>
                    </div>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-xl mb-8">
@@ -424,7 +424,7 @@ const TrustLayer = () => (
                      </div>
                      <div className="shrink-0">
                          <div className="flex items-center gap-2 bg-blue-50 text-[#2563EB] px-3 py-1.5 rounded-lg border border-blue-100 cursor-pointer hover:bg-blue-100 transition-colors">
-                             <span className="text-lg font-medium uppercase">Pg 42</span>
+                             <span className="text-xs font-medium uppercase">Pg 42</span>
                              <ArrowRightIcon className="w-3 h-3" />
                          </div>
                      </div>
@@ -439,7 +439,7 @@ const TrustLayer = () => (
                    </div>
                    <div>
                       <h3 className="text-xl font-medium text-[#0B1120]">Provider Indexing</h3>
-                      <p className="text-lg font-medium text-slate-400 uppercase mt-1">Missing Record Identification</p>
+                      <p className="text-sm font-medium text-slate-400 uppercase mt-1">Missing Record Identification</p>
                    </div>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-xl mb-8">
@@ -449,19 +449,19 @@ const TrustLayer = () => (
                 <div className="bg-slate-50 rounded-xl border border-slate-100 p-2">
                     <div className="grid grid-cols-2 gap-2">
                         <div className="bg-white p-3 rounded border border-slate-200 shadow-sm">
-                            <div className="text-lg font-medium text-slate-400 uppercase mb-1">Provider</div>
+                            <div className="text-xs font-medium text-slate-400 uppercase mb-1">Provider</div>
                             <div className="font-medium text-slate-800">Mercy Hospital</div>
                         </div>
                         <div className="bg-white p-3 rounded border border-slate-200 shadow-sm">
-                            <div className="text-lg font-medium text-slate-400 uppercase mb-1">Status</div>
+                            <div className="text-xs font-medium text-slate-400 uppercase mb-1">Status</div>
                             <div className="font-medium text-emerald-600 flex items-center gap-1"><CheckCircleIcon className="w-3 h-3"/> Present</div>
                         </div>
                         <div className="bg-white p-3 rounded border border-slate-200 shadow-sm">
-                            <div className="text-lg font-medium text-slate-400 uppercase mb-1">Provider</div>
+                            <div className="text-xs font-medium text-slate-400 uppercase mb-1">Provider</div>
                             <div className="font-medium text-slate-800">Dr. S. Smith</div>
                         </div>
                         <div className="bg-white p-3 rounded border border-slate-200 shadow-sm">
-                            <div className="text-lg font-medium text-slate-400 uppercase mb-1">Status</div>
+                            <div className="text-xs font-medium text-slate-400 uppercase mb-1">Status</div>
                             <div className="font-medium text-red-600 flex items-center gap-1"><AlertCircleIcon className="w-3 h-3"/> Missing</div>
                         </div>
                     </div>
@@ -476,7 +476,7 @@ const TrustLayer = () => (
                    </div>
                    <div>
                       <h3 className="text-xl font-medium text-[#0B1120]">Pre Existing Condition Search</h3>
-                      <p className="text-lg font-medium text-slate-400 uppercase mt-1">Defense Mitigation</p>
+                      <p className="text-sm font-medium text-slate-400 uppercase mt-1">Defense Mitigation</p>
                    </div>
                 </div>
                 <p className="text-slate-600 leading-relaxed text-xl mb-8">
@@ -489,7 +489,7 @@ const TrustLayer = () => (
                          <span className="text-slate-400 font-medium">Search: "Prior Back Injury"</span>
                      </div>
                      <div className="pl-4 border-l-2 border-orange-200">
-                         <div className="text-lg font-medium text-slate-400 uppercase mb-1">Result (Pg. 3)</div>
+                         <div className="text-xs font-medium text-slate-400 uppercase mb-1">Result (Pg. 3)</div>
                          <p className="text-slate-700 font-serif italic">"...patient reports a <span className="bg-orange-100 text-orange-800 font-medium px-1">slip and fall in 2019</span> resulting in lumbar strain..."</p>
                      </div>
                 </div>
@@ -511,7 +511,7 @@ const PlatformSecurity = () => (
                     <FingerprintIcon className="w-6 h-6" />
                  </div>
                  <h2 className="text-xl md:text-2xl font-medium text-white mb-4">Security & Infrastructure</h2>
-                 <div className="text-lg font-medium text-slate-400 uppercase tracking-widest mb-6">The Safety Layer</div>
+                 <div className="text-sm font-medium text-slate-400 uppercase tracking-widest mb-6">The Safety Layer</div>
                  <p className="text-slate-400 leading-relaxed text-xl">
                     Sovereign by design. We minimize your liability exposure by not holding your client data longer than necessary.
                  </p>
@@ -523,7 +523,7 @@ const PlatformSecurity = () => (
                         <LightningIcon className="w-6 h-6 text-teal-400 shrink-0" />
                         <h3 className="text-lg md:text-xl font-medium text-white">Ephemeral Processing</h3>
                     </div>
-                    <p className="text-slate-400 leading-relaxed mb-2 font-medium text-lg md:text-lg uppercase">Zero Retention Architecture</p>
+                    <p className="text-slate-400 leading-relaxed mb-2 font-medium text-xs md:text-sm uppercase">Zero Retention Architecture</p>
                     <p className="text-slate-300 leading-relaxed text-lg">
                         We minimize your liability exposure by not holding your client data. Source files are processed in ephemeral memory and are permanently deleted from our storage buckets after a secure retention window.
                     </p>
@@ -534,7 +534,7 @@ const PlatformSecurity = () => (
                         <DatabaseIcon className="w-6 h-6 text-blue-400 shrink-0" />
                         <h3 className="text-lg md:text-xl font-medium text-white">Sovereign Infrastructure</h3>
                     </div>
-                    <p className="text-slate-400 leading-relaxed mb-2 font-medium text-lg md:text-lg uppercase">US East 1 Residency</p>
+                    <p className="text-slate-400 leading-relaxed mb-2 font-medium text-xs md:text-sm uppercase">US East 1 Residency</p>
                     <p className="text-slate-300 leading-relaxed text-lg">
                         We guarantee that all data processing and temporary storage occur exclusively within AWS data centers in the United States. Your client data remains within US jurisdiction at all times.
                     </p>
@@ -545,7 +545,7 @@ const PlatformSecurity = () => (
                         <LockIcon className="w-6 h-6 text-purple-400 shrink-0" />
                         <h3 className="text-lg md:text-xl font-medium text-white">Attorney Work Product Support</h3>
                     </div>
-                    <p className="text-slate-400 leading-relaxed mb-2 font-medium text-lg md:text-lg uppercase">Confidentiality Protocols</p>
+                    <p className="text-slate-400 leading-relaxed mb-2 font-medium text-xs md:text-sm uppercase">Confidentiality Protocols</p>
                     <p className="text-slate-300 leading-relaxed text-lg">
                         Our architecture is designed to support strict non disclosure requirements. We act as a silent vendor to ensure your work product remains privileged and secure.
                     </p>

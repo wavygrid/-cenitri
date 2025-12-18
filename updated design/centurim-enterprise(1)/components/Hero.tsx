@@ -20,20 +20,20 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
               Turn Unstructured Medical Records into <span className="text-[#2563EB]">Structured Clinical Data</span>
             </h1>
             <div className="w-24 h-2 bg-[#0B1120] mb-12"></div>
-            <p className="text-lg text-slate-700 mb-14 leading-relaxed font-medium max-w-xl">
+            <p className="text-xl text-slate-700 mb-14 leading-relaxed font-medium max-w-xl">
               We convert thousands of pages of raw medical PDFs into structured chronologies and variance reports with review-ready precision.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 mb-8">
-              <Button
-                variant="primary"
+            <div className="flex flex-col sm:flex-row gap-6">
+              <Button 
+                variant="primary" 
                 className="h-16 px-10 text-lg shadow-xl shadow-blue-900/10"
                 onClick={() => onNavigate?.('contact')}
                 aria-label="Start your workflow selection"
               >
                 Select Your Workflow
               </Button>
-              <Button
-                variant="outline"
+              <Button 
+                variant="outline" 
                 className="h-16 px-10 text-lg"
                 onClick={() => onNavigate?.('contact')}
                 aria-label="View system architecture"
@@ -41,11 +41,6 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                 View Architecture
               </Button>
             </div>
-            <img
-              src="/HIPAA_DARK.svg"
-              alt="HIPAA Compliant"
-              className="h-14 w-auto"
-            />
           </div>
 
           {/* Visual Content */}
@@ -55,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                    {/* Header of Doc */}
                    <div className="px-8 py-6 border-b border-slate-100 flex justify-between items-center bg-white">
                        <div>
-                           <div className="text-lg font-medium uppercase tracking-widest text-slate-500 mb-2">Generated Output</div>
+                           <div className="text-sm font-medium uppercase tracking-widest text-slate-500 mb-2">Generated Output</div>
                            <h3 className="text-lg font-medium text-[#0B1120]">Medical Chronology Summary</h3>
                        </div>
                        <div className="flex items-center gap-3">
@@ -70,7 +65,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                        <div className="flex gap-8">
                            <div className="w-32 shrink-0 pt-1">
                                <div className="text-lg font-medium text-slate-900">Oct 12, 2023</div>
-                               <div className="text-lg text-slate-500 font-medium uppercase tracking-wide mt-2">14:30 PM</div>
+                               <div className="text-sm text-slate-500 font-medium uppercase tracking-wide mt-2">14:30 PM</div>
                            </div>
                            <div className="flex-1 pb-10 border-l-2 border-slate-100 pl-8 relative">
                                <div className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-white border-4 border-[#2563EB]"></div>
@@ -89,7 +84,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                        <div className="flex gap-8">
                            <div className="w-32 shrink-0 pt-1">
                                <div className="text-lg font-medium text-slate-900">Oct 14, 2023</div>
-                               <div className="text-lg text-slate-500 font-medium uppercase tracking-wide mt-2">09:15 AM</div>
+                               <div className="text-sm text-slate-500 font-medium uppercase tracking-wide mt-2">09:15 AM</div>
                            </div>
                            <div className="flex-1 pl-8 relative">
                                <div className="absolute -left-[9px] top-2 w-4 h-4 rounded-full bg-white border-4 border-slate-300"></div>
@@ -107,7 +102,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
                        <div className="flex items-center gap-3 text-base font-medium text-slate-700">
                            <CheckIcon className="w-5 h-5 text-emerald-600" /> 100% Source Verified
                        </div>
-                       <div className="text-lg font-medium text-slate-500 uppercase tracking-widest">
+                       <div className="text-sm font-medium text-slate-500 uppercase tracking-widest">
                            Confidential &bull; Case #492-AC
                        </div>
                    </div>

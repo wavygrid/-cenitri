@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Centurim_favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Primary Meta Tags -->
@@ -33,44 +33,29 @@
     <meta property="twitter:image" content="/images/og-master.png" />
     <meta property="twitter:creator" content="@centurim" />
 
-    <!-- Local Fonts -->
-    <link rel="stylesheet" href="/fonts/fonts.css">
-
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Switzer', 'system-ui', 'sans-serif'],
-              heading: ['Manrope', 'system-ui', 'sans-serif'],
-            },
-          },
-        },
-      }
-    </script>
+    
+    <!-- Manrope (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Switzer (Fontshare) -->
+    <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet">
 
     <style>
-      * {
-        font-family: 'Switzer', system-ui, sans-serif;
-      }
-
       body {
-        font-family: 'Switzer', system-ui, sans-serif;
+        font-family: 'Switzer', sans-serif;
         background-color: #FFFFFF;
         color: #0B1120;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
-
+      
       /* Enforce Manrope for Headings */
       h1, h2, h3, h4, h5, h6, .font-heading {
-        font-family: 'Manrope', system-ui, sans-serif !important;
-        letter-spacing: -0.02em;
-      }
-
-      button {
-        font-family: 'Switzer', system-ui, sans-serif;
+        font-family: 'Manrope', sans-serif;
+        letter-spacing: -0.02em; 
       }
     </style>
   <script type="importmap">

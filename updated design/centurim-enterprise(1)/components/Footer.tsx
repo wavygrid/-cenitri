@@ -13,11 +13,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         <div className="flex flex-col md:flex-row justify-between gap-10 mb-12">
           
           <div className="max-w-md">
-            <img
-              src="/Centurim_for_light_logo.svg"
-              alt="Centurim Logo"
-              className="h-8 w-auto mb-4 brightness-0 invert"
-            />
+            <h3 className="text-white text-xl font-bold tracking-tight mb-4">Centurim Systems</h3>
             <p className="text-slate-400 text-base font-medium mb-6">
               Automated Medical Record Intelligence for Regulated Industries.
             </p>
@@ -36,16 +32,12 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <span className="hidden md:inline text-slate-700">|</span>
                 <button onClick={() => onNavigate?.('contact')} className="hover:text-white transition-colors">Request BAA</button>
              </div>
-             <img
-               src="/HIPAA_LIGHT.svg"
-               alt="HIPAA Compliant"
-               className="h-12 w-auto"
-             />
+             <div className="px-4 py-1.5 bg-slate-800 rounded font-bold text-xs border border-slate-700 text-slate-300 uppercase tracking-wider inline-block">HIPAA Aligned</div>
           </div>
 
         </div>
 
-        <div className="pt-8 border-t border-slate-800 text-lg text-slate-500 font-medium leading-relaxed">
+        <div className="pt-8 border-t border-slate-800 text-sm text-slate-500 font-medium leading-relaxed">
           <p className="max-w-3xl">
             Disclaimer: Centurim provides automated data extraction and analysis services. We do not provide legal advice or medical diagnoses. All reports are draft work products intended for professional review and verification.
           </p>

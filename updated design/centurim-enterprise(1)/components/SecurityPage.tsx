@@ -42,11 +42,11 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
               <ServerIcon className="w-6 h-6" />
             </div>
             <h2 className="text-2xl font-medium text-[#0B1120] mb-2">1. Infrastructure & Sovereignty</h2>
-            <p className="text-lg font-bold text-slate-400 uppercase tracking-widest">The Physical Layer</p>
+            <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">The Physical Layer</p>
           </div>
           <div className="w-full md:w-2/3">
             <h3 className="text-xl font-bold text-[#0B1120] mb-4">US Data Residency</h3>
-            <p className="text-base text-slate-600 mb-6 leading-relaxed">
+            <p className="text-lg text-slate-600 mb-6 leading-relaxed">
               We strictly adhere to data localization protocols.
             </p>
             <ul className="space-y-4">
@@ -73,11 +73,11 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
               <LightningIcon className="w-6 h-6" />
             </div>
             <h2 className="text-2xl font-medium text-[#0B1120] mb-2">2. Data Lifecycle Management</h2>
-            <p className="text-lg font-bold text-slate-400 uppercase tracking-widest">The "Zero Retention" Defense</p>
+            <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">The "Zero Retention" Defense</p>
           </div>
           <div className="w-full md:w-2/3">
             <h3 className="text-xl font-bold text-[#0B1120] mb-4">Ephemeral Processing Model</h3>
-            <p className="text-base text-slate-600 mb-6 leading-relaxed">
+            <p className="text-lg text-slate-600 mb-6 leading-relaxed">
               Our architecture is designed to process data without retaining it. We view data as a liability, not an asset.
             </p>
             <ul className="space-y-4">
@@ -108,11 +108,11 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
               <LockIcon className="w-6 h-6" />
             </div>
             <h2 className="text-2xl font-medium text-[#0B1120] mb-2">3. Cryptographic Controls</h2>
-            <p className="text-lg font-bold text-slate-400 uppercase tracking-widest">The Math</p>
+            <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">The Math</p>
           </div>
           <div className="w-full md:w-2/3">
             <h3 className="text-xl font-bold text-[#0B1120] mb-4">Encryption Standards</h3>
-            <p className="text-base text-slate-600 mb-6 leading-relaxed">
+            <p className="text-lg text-slate-600 mb-6 leading-relaxed">
               We employ industry standard encryption protocols for data in all states.
             </p>
             <ul className="space-y-4">
@@ -135,7 +135,7 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
               <ShieldCheckIcon className="w-6 h-6" />
             </div>
             <h2 className="text-2xl font-medium text-[#0B1120] mb-2">4. Regulatory Compliance</h2>
-            <p className="text-lg font-bold text-slate-400 uppercase tracking-widest">The Contractual Stance</p>
+            <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">The Contractual Stance</p>
           </div>
           <div className="w-full md:w-2/3">
             <h3 className="text-xl font-bold text-[#0B1120] mb-4">HIPAA Alignment</h3>
@@ -163,7 +163,7 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
               <FingerprintIcon className="w-6 h-6" />
             </div>
             <h2 className="text-2xl font-medium text-[#0B1120] mb-2">5. Application Security</h2>
-            <p className="text-lg font-bold text-slate-400 uppercase tracking-widest">The Software Layer</p>
+            <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">The Software Layer</p>
           </div>
           <div className="w-full md:w-2/3 space-y-8">
             <div>
@@ -177,14 +177,14 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
             
             <div>
                 <h4 className="text-lg font-bold text-slate-800 mb-2">Blind Ingestion Protocol</h4>
-                <p className="text-base text-slate-600 font-medium leading-relaxed">
+                <p className="text-lg text-slate-600 font-medium leading-relaxed">
                     Our frontend architecture decouples metadata from file content. Filenames are anonymized at the edge to prevent unauthorized inspection of patient identifiers during the upload process.
                 </p>
             </div>
 
             <div>
                 <h4 className="text-lg font-bold text-slate-800 mb-2">Audit Logging</h4>
-                <p className="text-base text-slate-600 font-medium leading-relaxed">
+                <p className="text-lg text-slate-600 font-medium leading-relaxed">
                     Every system interaction, including file uploads, processing events, and deletions, is recorded in immutable AWS CloudTrail ledgers.
                 </p>
             </div>
@@ -198,7 +198,7 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
               <UsersIcon className="w-6 h-6" />
             </div>
             <h2 className="text-2xl font-medium text-[#0B1120] mb-2">6. Operational Security</h2>
-            <p className="text-lg font-bold text-slate-400 uppercase tracking-widest">The Human Layer</p>
+            <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">The Human Layer</p>
           </div>
           <div className="w-full md:w-2/3">
             <h3 className="text-xl font-bold text-[#0B1120] mb-4">Personnel and Device Security</h3>
@@ -226,7 +226,7 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
               <ScanIcon className="w-6 h-6" />
             </div>
             <h2 className="text-2xl font-medium text-[#0B1120] mb-2">7. Vulnerability Management</h2>
-            <p className="text-lg font-bold text-slate-400 uppercase tracking-widest">The Maintenance Layer</p>
+            <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">The Maintenance Layer</p>
           </div>
           <div className="w-full md:w-2/3">
             <h3 className="text-xl font-bold text-[#0B1120] mb-4">Continuous Monitoring</h3>
@@ -248,7 +248,7 @@ export const SecurityPage: React.FC<SecurityPageProps> = ({ onNavigate }) => {
       {/* Footer Disclaimer */}
       <div className="bg-slate-50 border-t border-slate-200 py-12">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
-              <h4 className="text-lg font-bold text-[#0B1120] uppercase tracking-widest mb-4">Legal Notice</h4>
+              <h4 className="text-sm font-bold text-[#0B1120] uppercase tracking-widest mb-4">Legal Notice</h4>
               <p className="text-slate-500 font-medium">
                   Centurim provides data processing services. Our liability is limited as set forth in our Master Services Agreement (MSA) and Business Associate Agreement (BAA). Users are responsible for ensuring they have the legal right to upload data to the platform.
               </p>

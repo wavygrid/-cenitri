@@ -20,7 +20,7 @@ export const SecuritySection: React.FC = () => {
               <ServerIcon className="w-8 h-8 text-[#0B1120]" />
             </div>
             <h3 className="text-lg font-medium text-[#0B1120] mb-3">US Data Residency</h3>
-            <p className="text-slate-600 text-lg leading-relaxed font-medium">
+            <p className="text-slate-600 text-sm leading-relaxed font-medium">
               All processing occurs exclusively within AWS US East 1.
             </p>
           </div>
@@ -30,7 +30,7 @@ export const SecuritySection: React.FC = () => {
               <LightningIcon className="w-8 h-8 text-[#0B1120]" />
             </div>
             <h3 className="text-lg font-medium text-[#0B1120] mb-3">Ephemeral Processing</h3>
-            <p className="text-slate-600 text-lg leading-relaxed font-medium">
+            <p className="text-slate-600 text-sm leading-relaxed font-medium">
               Data exists in memory only for the duration of the analysis to minimize liability.
             </p>
           </div>
@@ -40,7 +40,7 @@ export const SecuritySection: React.FC = () => {
               <LockIcon className="w-8 h-8 text-[#0B1120]" />
             </div>
             <h3 className="text-lg font-medium text-[#0B1120] mb-3">AES-256 Encryption</h3>
-            <p className="text-slate-600 text-lg leading-relaxed font-medium">
+            <p className="text-slate-600 text-sm leading-relaxed font-medium">
               Military-grade encryption for data at rest and TLS 1.3 for data in transit.
             </p>
           </div>
@@ -50,7 +50,7 @@ export const SecuritySection: React.FC = () => {
               <ShieldCheckIcon className="w-8 h-8 text-[#0B1120]" />
             </div>
             <h3 className="text-lg font-medium text-[#0B1120] mb-3">HIPAA Aligned</h3>
-            <p className="text-slate-600 text-lg leading-relaxed font-medium">
+            <p className="text-slate-600 text-sm leading-relaxed font-medium">
               Architecture designed for HITECH compliance and Business Associate Agreement support.
             </p>
           </div>
