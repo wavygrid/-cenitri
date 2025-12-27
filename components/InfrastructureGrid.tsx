@@ -3,12 +3,12 @@ import { Smartphone, Calendar, CreditCard, MessageCircle, MapPin, Star, ChevronR
 
 export const InfrastructureGrid: React.FC = () => {
   return (
-    <section className="py-32 bg-slate-50">
+    <section className="py-24 lg:py-32 bg-slate-50" aria-labelledby="infrastructure-heading">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mb-20">
-           <h2 className="text-4xl font-display font-bold text-slate-900 mb-6">Everything you need to grow.</h2>
-           <p className="text-xl text-slate-500 max-w-2xl">
-             We’ve distilled the complex tools of big enterprise into a simple operating system for your trade business.
+           <h2 id="infrastructure-heading" className="text-3xl md:text-4xl font-bold leading-tight text-slate-900 mb-6">Everything you need to grow.</h2>
+           <p className="text-lg leading-relaxed text-slate-700 max-w-2xl">
+             We've distilled the complex tools of big enterprise into a simple operating system for your trade business.
            </p>
         </div>
 
@@ -21,12 +21,12 @@ export const InfrastructureGrid: React.FC = () => {
                        <div className="h-10 w-10 bg-slate-100 rounded-xl flex items-center justify-center mb-4">
                            <Smartphone className="h-5 w-5 text-slate-700" />
                        </div>
-                       <h3 className="text-xl font-bold text-slate-900 mb-2">Native Mobile Presence</h3>
-                       <p className="text-slate-500 leading-relaxed">
+                       <h3 className="text-xl font-semibold leading-snug text-slate-900 mb-2">Native Mobile Presence</h3>
+                       <p className="text-base leading-relaxed text-slate-700">
                            A high-performance PWA that installs on your customer's phone. Push notifications, offline mode, and instant loading.
                        </p>
                    </div>
-                   <div className="mt-8 flex items-center text-brand-600 font-bold text-sm cursor-pointer">
+                   <div className="mt-8 flex items-center text-brand-600 font-semibold text-base leading-normal cursor-pointer">
                        Learn more <ChevronRight className="h-4 w-4 ml-1" />
                    </div>
                </div>
@@ -49,14 +49,14 @@ export const InfrastructureGrid: React.FC = () => {
                    <div className="h-10 w-10 bg-slate-100 rounded-xl flex items-center justify-center mb-4">
                        <CreditCard className="h-5 w-5 text-slate-700" />
                    </div>
-                   <h3 className="text-xl font-bold text-slate-900 mb-2">Payments</h3>
-                   <p className="text-slate-500 text-sm leading-relaxed">
+                   <h3 className="text-xl font-semibold leading-snug text-slate-900 mb-2">Payments</h3>
+                   <p className="text-base leading-relaxed text-slate-700">
                        Integrated Stripe processing. Take deposits instantly during booking.
                    </p>
                </div>
                <div className="mt-8 bg-green-50 rounded-xl p-3 border border-green-100 flex items-center justify-between">
-                   <span className="text-xs font-bold text-green-700">Payment Success</span>
-                   <span className="text-sm font-bold text-green-800">$450.00</span>
+                   <span className="text-xs leading-normal font-medium text-green-700">Payment Success</span>
+                   <span className="text-sm leading-normal font-bold text-green-800">$450.00</span>
                </div>
            </div>
 
@@ -66,20 +66,20 @@ export const InfrastructureGrid: React.FC = () => {
                    <div className="h-10 w-10 bg-slate-800 rounded-xl flex items-center justify-center mb-4">
                        <MessageCircle className="h-5 w-5 text-brand-500" />
                    </div>
-                   <h3 className="text-xl font-bold mb-2">AI Agent</h3>
-                   <p className="text-slate-400 text-sm leading-relaxed mb-8">
+                   <h3 className="text-xl font-semibold leading-snug mb-2">AI Agent</h3>
+                   <p className="text-slate-300 text-base leading-relaxed mb-8">
                        Your 24/7 receptionist. Handles calls, texts, and qualifies leads automatically.
                    </p>
                </div>
                {/* UI Visual */}
                <div className="flex-1 bg-slate-800/50 rounded-xl border border-slate-700 p-4 space-y-3">
-                   <div className="bg-slate-700 p-3 rounded-lg rounded-tl-none w-3/4 text-xs text-slate-200">
+                   <div className="bg-slate-700 p-3 rounded-lg rounded-tl-none w-3/4 text-sm leading-normal text-slate-200">
                        Hi, do you fix water heaters?
                    </div>
-                   <div className="bg-brand-600 p-3 rounded-lg rounded-tr-none w-3/4 ml-auto text-xs text-white">
+                   <div className="bg-brand-600 p-3 rounded-lg rounded-tr-none w-3/4 ml-auto text-sm leading-normal text-white">
                        Yes! I can book a tech for 2pm.
                    </div>
-                   <div className="bg-slate-700 p-3 rounded-lg rounded-tl-none w-3/4 text-xs text-slate-200">
+                   <div className="bg-slate-700 p-3 rounded-lg rounded-tl-none w-3/4 text-sm leading-normal text-slate-200">
                        Perfect, let's do it.
                    </div>
                </div>
@@ -91,8 +91,8 @@ export const InfrastructureGrid: React.FC = () => {
                    <div className="h-10 w-10 bg-slate-100 rounded-xl flex items-center justify-center mb-4">
                        <MapPin className="h-5 w-5 text-slate-700" />
                    </div>
-                   <h3 className="text-xl font-bold text-slate-900 mb-2">Smart Dispatch</h3>
-                   <p className="text-slate-500 text-sm leading-relaxed">
+                   <h3 className="text-xl font-semibold leading-snug text-slate-900 mb-2">Smart Dispatch</h3>
+                   <p className="text-base leading-relaxed text-slate-700">
                        Assign jobs based on technician location and skill level.
                    </p>
                </div>
@@ -104,8 +104,8 @@ export const InfrastructureGrid: React.FC = () => {
                    <div className="h-10 w-10 bg-slate-100 rounded-xl flex items-center justify-center mb-4">
                        <Star className="h-5 w-5 text-slate-700" />
                    </div>
-                   <h3 className="text-xl font-bold text-slate-900 mb-2">Reputation</h3>
-                   <p className="text-slate-500 text-sm leading-relaxed">
+                   <h3 className="text-xl font-semibold leading-snug text-slate-900 mb-2">Reputation</h3>
+                   <p className="text-base leading-relaxed text-slate-700">
                        Auto-request 5-star reviews after every completed job.
                    </p>
                </div>
@@ -117,15 +117,15 @@ export const InfrastructureGrid: React.FC = () => {
                    <div className="h-10 w-10 bg-slate-100 rounded-xl flex items-center justify-center mb-4">
                        <Calendar className="h-5 w-5 text-slate-700" />
                    </div>
-                   <h3 className="text-xl font-bold text-slate-900 mb-2">Algorithmic Booking Engine</h3>
-                   <p className="text-slate-500 leading-relaxed max-w-2xl">
+                   <h3 className="text-xl font-semibold leading-snug text-slate-900 mb-2">Algorithmic Booking Engine</h3>
+                   <p className="text-base leading-relaxed text-slate-700 max-w-2xl">
                        Stop manually scheduling. Our engine syncs with your calendar, calculates drive time buffers, and only offers slots that actually work for your team.
                    </p>
                </div>
                <div className="flex gap-2">
-                   <div className="px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm font-bold text-slate-400 line-through">9:00 AM</div>
-                   <div className="px-4 py-2 bg-slate-900 border border-slate-900 rounded-lg text-sm font-bold text-white shadow-lg">11:00 AM</div>
-                   <div className="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm font-bold text-slate-900 hover:border-brand-500 cursor-pointer">2:00 PM</div>
+                   <div className="px-4 py-2 bg-slate-50 border border-slate-200 rounded-lg text-sm leading-normal font-medium text-slate-600 line-through">9:00 AM</div>
+                   <div className="px-4 py-2 bg-slate-900 border border-slate-900 rounded-lg text-sm leading-normal font-bold text-white shadow-lg">11:00 AM</div>
+                   <div className="px-4 py-2 bg-white border border-slate-200 rounded-lg text-sm leading-normal font-bold text-slate-900 hover:border-brand-500 cursor-pointer">2:00 PM</div>
                </div>
            </div>
 
