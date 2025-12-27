@@ -41,11 +41,11 @@ export const Pricing: React.FC = () => {
            {/* Growth */}
            <div className="p-10 rounded-3xl bg-slate-900 text-white relative shadow-2xl shadow-slate-900/10">
               <div className="absolute top-0 right-0 p-4">
-                  <span className="bg-brand-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wide">Most Popular</span>
+                  <span className="bg-brand-600 text-white text-xs leading-normal font-medium px-3 py-1 rounded-full uppercase tracking-wide">Most Popular</span>
               </div>
-              
-              <h3 className="text-xl font-bold text-white">Growth</h3>
-              <p className="text-slate-400 text-sm mt-2 mb-8">For teams ready to automate operations.</p>
+
+              <h3 className="text-2xl font-semibold leading-snug text-white">Growth</h3>
+              <p className="text-slate-400 text-sm leading-normal mt-2 mb-8">For teams ready to automate operations.</p>
               
               <div className="flex items-baseline gap-1 mb-8">
                  <span className="text-5xl font-bold text-white tracking-tight">$299</span>

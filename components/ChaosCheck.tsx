@@ -7,30 +7,30 @@ import {
 
 export const ChaosCheck: React.FC = () => {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-24 lg:py-32 bg-white overflow-hidden" aria-labelledby="architecture-comparison">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         
         <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-slate-900 mb-6">
+            <h2 id="architecture-comparison" className="text-3xl md:text-4xl font-bold leading-tight text-slate-900 mb-6">
                 Architecture Comparison
             </h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+            <p className="text-base leading-relaxed text-slate-700 max-w-2xl mx-auto">
                 Your business efficiency is defined by your data flow. <br/>
                 Stop building spaghetti code with expensive subscriptions.
             </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-stretch">
             
             {/* LEFT: THE FRAGMENTED STACK (Spaghetti) */}
             <div className="relative group">
                 <div className="absolute -inset-4 bg-slate-50 rounded-[3rem] -z-10 border border-slate-100"></div>
                 <div className="text-center mb-8">
-                    <h3 className="text-xl font-bold text-slate-900 flex items-center justify-center gap-2">
+                    <h3 className="text-2xl font-semibold leading-snug text-slate-900 flex items-center justify-center gap-2">
                         <AlertCircle className="h-5 w-5 text-red-500" />
                         Fragmented Stack
                     </h3>
-                    <p className="text-sm text-slate-500 mt-1">Manual Data Entry • High Latency</p>
+                    <p className="text-sm leading-normal text-slate-600 mt-1">Manual Data Entry • High Latency</p>
                 </div>
 
                 {/* Diagram Area */}
@@ -64,7 +64,7 @@ export const ChaosCheck: React.FC = () => {
                             <Calendar className="h-4 w-4 text-orange-500" />
                             <span className="text-xs font-bold text-slate-700">Calendly</span>
                         </div>
-                         <div className="text-[10px] text-red-500 font-bold mt-1">⚠ Sync Error</div>
+                         <div className="text-xs leading-normal text-red-500 font-medium mt-1">⚠ Sync Error</div>
                     </div>
 
                     {/* Node 3: CRM */}
@@ -73,7 +73,7 @@ export const ChaosCheck: React.FC = () => {
                             <Users className="h-4 w-4 text-green-500" />
                             <span className="text-xs font-bold text-slate-700">HubSpot</span>
                         </div>
-                        <div className="text-[10px] text-slate-400">Last sync: 2d ago</div>
+                        <div className="text-xs leading-normal text-slate-600">Last sync: 2d ago</div>
                     </div>
 
                     {/* Node 4: Email */}
@@ -82,7 +82,7 @@ export const ChaosCheck: React.FC = () => {
                             <Mail className="h-4 w-4 text-yellow-500" />
                             <span className="text-xs font-bold text-slate-700">Mailchimp</span>
                         </div>
-                         <div className="text-[10px] text-red-500 font-bold mt-1">Manual Entry</div>
+                         <div className="text-xs leading-normal text-red-500 font-medium mt-1">Manual Entry</div>
                     </div>
 
                      {/* Node 5: Reviews */}
@@ -94,15 +94,15 @@ export const ChaosCheck: React.FC = () => {
                     </div>
 
                     {/* Disconnect Alert */}
-                    <div className="absolute top-4 right-4 bg-red-100 text-red-700 text-[10px] font-bold px-2 py-1 rounded-full border border-red-200">
+                    <div className="absolute top-4 right-4 bg-red-100 text-red-700 text-xs leading-normal font-medium px-2 py-1 rounded-full border border-red-200">
                         5 Disconnected Data Silos
                     </div>
 
                 </div>
 
                 <div className="mt-6 flex justify-between items-center px-4">
-                    <span className="text-sm font-bold text-slate-400 uppercase">Monthly Burn</span>
-                    <span className="text-2xl font-bold text-slate-900">$853<span className="text-sm text-slate-400">/mo</span></span>
+                    <span className="text-sm leading-normal font-medium text-slate-600 uppercase">Monthly Burn</span>
+                    <span className="text-2xl font-bold text-slate-900">$853<span className="text-sm text-slate-600">/mo</span></span>
                 </div>
             </div>
 
@@ -113,11 +113,11 @@ export const ChaosCheck: React.FC = () => {
                 <div className="absolute -inset-4 bg-brand-500/20 rounded-[3rem] -z-20 blur-2xl"></div>
 
                 <div className="text-center mb-8 relative z-10">
-                    <h3 className="text-xl font-bold text-white flex items-center justify-center gap-2">
+                    <h3 className="text-2xl font-semibold leading-snug text-white flex items-center justify-center gap-2">
                         <Zap className="h-5 w-5 text-brand-500 fill-brand-500" />
                         Unified OS
                     </h3>
-                    <p className="text-sm text-slate-400 mt-1">Real-time Sync • Automated Flow</p>
+                    <p className="text-sm leading-normal text-slate-400 mt-1">Real-time Sync • Automated Flow</p>
                 </div>
 
                 {/* Diagram Area */}
@@ -150,8 +150,8 @@ export const ChaosCheck: React.FC = () => {
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-slate-800 p-1 rounded-2xl border border-slate-600 shadow-2xl shadow-brand-500/20 z-20">
                         <div className="bg-slate-900 rounded-xl p-4 flex flex-col items-center justify-center w-32 h-32 border border-slate-700">
                             <LayoutGrid className="h-8 w-8 text-brand-500 mb-2 animate-pulse" />
-                            <span className="text-xs font-bold text-white uppercase tracking-widest">Core</span>
-                            <span className="text-[10px] text-brand-400">Processing...</span>
+                            <span className="text-xs font-semibold text-white uppercase tracking-wide">Core</span>
+                            <span className="text-xs leading-normal text-brand-400">Processing...</span>
                         </div>
                     </div>
 
@@ -178,7 +178,7 @@ export const ChaosCheck: React.FC = () => {
                 </div>
 
                 <div className="mt-6 flex justify-between items-center px-4 relative z-10">
-                    <span className="text-sm font-bold text-slate-400 uppercase">Unified Cost</span>
+                    <span className="text-sm leading-normal font-medium text-slate-400 uppercase">Unified Cost</span>
                     <span className="text-2xl font-bold text-white">$199<span className="text-sm text-slate-500">/mo</span></span>
                 </div>
             </div>

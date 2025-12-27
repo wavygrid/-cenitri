@@ -46,8 +46,8 @@ export const AiWorkforce: React.FC = () => {
 
                          {/* AI */}
                          <div className="flex gap-4 items-end flex-row-reverse">
-                             <div className="h-6 w-6 rounded-full bg-brand-500 flex items-center justify-center text-white text-[10px] flex-shrink-0">AI</div>
-                             <div className="bg-brand-600 p-3 rounded-2xl rounded-br-none text-sm text-white shadow-sm">
+                             <div className="h-6 w-6 rounded-full bg-brand-500 flex items-center justify-center text-white text-xs leading-none flex-shrink-0">AI</div>
+                             <div className="bg-brand-600 p-3 rounded-2xl rounded-br-none text-sm leading-normal text-white shadow-sm">
                                  Yes we do! 🛠️ I can have a tech there between 12-2 PM today. Want me to book it?
                              </div>
                          </div>

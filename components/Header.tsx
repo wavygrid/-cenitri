@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight, LayoutGrid } from 'lucide-react';
+import { Menu, X, ArrowRight } from 'lucide-react';
 
 export const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -26,13 +26,12 @@ export const Header: React.FC = () => {
           <div className="flex items-center justify-between">
             
             {/* Logo Area */}
-            <div className="flex items-center gap-3 cursor-pointer group">
-              <div className="h-9 w-9 bg-slate-900 rounded-lg flex items-center justify-center shadow-lg group-hover:bg-brand-500 transition-colors duration-300">
-                 <LayoutGrid className="h-5 w-5 text-white" />
-              </div>
-              <span className="text-lg font-bold tracking-tight text-slate-900 leading-none">
-                Centurim
-              </span>
+            <div className="cursor-pointer group">
+              <img
+                src="/Centurim_for_light_logo.svg"
+                alt="Centurim"
+                className="h-8 w-auto transition-opacity duration-300 group-hover:opacity-80"
+              />
             </div>
             
             {/* Desktop Nav - Centered */}

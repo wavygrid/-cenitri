@@ -3,7 +3,7 @@ import { ArrowRight, Play, Star } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="pt-32 pb-20 lg:pt-48 lg:pb-32 relative overflow-hidden bg-white">
+    <section className="py-24 lg:py-32 relative overflow-hidden bg-white" aria-labelledby="hero-heading">
       
       {/* Minimalist Background Gradients */}
       <div className="absolute top-0 inset-x-0 h-[500px] bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(249,115,22,0.15),rgba(255,255,255,0))] pointer-events-none"></div>
@@ -16,20 +16,20 @@ export const Hero: React.FC = () => {
             <span className="text-xs font-semibold tracking-wide uppercase">New: AI Receptionist 2.0</span>
           </div>
 
-          <h1 className="text-6xl md:text-8xl font-display font-bold tracking-tight text-slate-900 mb-8 leading-[1] animate-fade-up [animation-delay:100ms]">
+          <h1 id="hero-heading" className="text-5xl md:text-6xl font-bold tracking-tight leading-tight text-slate-900 mb-8 animate-fade-up [animation-delay:100ms]">
             The Operating System <br/>
-            <span className="text-slate-400">for Trade Business.</span>
+            <span className="text-slate-600">for Trade Business.</span>
           </h1>
-          
-          <p className="text-xl text-slate-500 mb-10 max-w-2xl leading-relaxed animate-fade-up [animation-delay:200ms]">
+
+          <p className="text-base leading-relaxed text-slate-700 mb-10 max-w-2xl animate-fade-up [animation-delay:200ms]">
              Centurim replaces your fragmented stack with one unified platform. Dispatch, payments, bookings, and AI — all in one place.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 mb-20 animate-fade-up [animation-delay:300ms]">
-             <button className="h-12 px-8 rounded-full bg-slate-900 text-white font-bold text-sm hover:bg-slate-800 hover:shadow-xl hover:shadow-slate-900/10 transition-all flex items-center gap-2">
+             <button className="h-12 px-8 rounded-full bg-slate-900 text-white font-semibold text-base hover:bg-slate-800 hover:shadow-xl hover:shadow-slate-900/10 transition-all flex items-center gap-2">
                 Start 14-day trial
              </button>
-             <button className="h-12 px-8 rounded-full bg-white text-slate-900 font-bold text-sm border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-all flex items-center gap-2">
+             <button className="h-12 px-8 rounded-full bg-white text-slate-900 font-semibold text-base border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-all flex items-center gap-2">
                 <Play className="h-3 w-3 fill-slate-900" /> Watch Demo
              </button>
           </div>

@@ -86,7 +86,7 @@ export const ChatInterface: React.FC = () => {
                 className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-[85%] rounded-2xl px-5 py-3 text-[15px] leading-relaxed ${
+                  className={`max-w-[85%] rounded-2xl px-5 py-3 text-base leading-relaxed ${
                     msg.role === 'user'
                       ? 'bg-indigo-600 text-white rounded-br-none shadow-md shadow-indigo-600/20'
                       : 'bg-slate-50 text-slate-700 rounded-bl-none'
@@ -129,7 +129,7 @@ export const ChatInterface: React.FC = () => {
               </button>
             </div>
             <div className="text-center mt-2">
-               <span className="text-[10px] text-slate-400">Powered by Centurim AI</span>
+               <span className="text-xs leading-normal text-slate-600">Powered by Centurim AI</span>
             </div>
           </form>
         </div>
