@@ -33,6 +33,18 @@ export const TechnicalSpecs: React.FC = () => {
                 </p>
             </div>
         </div>
+
+        {/* Compliance Badges */}
+        <div className="mt-16 pt-12 border-t border-slate-800 flex flex-col items-center">
+            <p className="text-sm leading-normal text-slate-400 mb-6 uppercase tracking-wide">Compliance & Certifications</p>
+            <div className="flex items-center gap-8 flex-wrap justify-center">
+                <img
+                    src="/HIPAA_DARK.svg"
+                    alt="HIPAA Compliant"
+                    className="h-16 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                />
+            </div>
+        </div>
       </div>
     </section>
   );
