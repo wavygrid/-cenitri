@@ -13,18 +13,18 @@ const data = [
 
 export const DashboardPreview: React.FC = () => {
   return (
-    <section className="py-24 bg-stone-50">
+    <section id="dashboard-preview" className="py-24 lg:py-32 bg-stone-50" aria-labelledby="dashboard-preview-heading">
        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="bg-white rounded-[2.5rem] p-8 md:p-12 shadow-soft border border-stone-100">
              <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 gap-6">
                 <div>
-                   <h2 className="text-3xl font-extrabold text-stone-900">Performance</h2>
-                   <p className="text-stone-500 mt-1">Your business health at a glance.</p>
+                   <h2 id="dashboard-preview-heading" className="text-3xl md:text-4xl font-bold leading-tight text-slate-900">Performance</h2>
+                   <p className="text-slate-700 mt-1">Your business health at a glance.</p>
                 </div>
                 <div className="flex bg-stone-100 p-1 rounded-xl">
-                   <button className="px-4 py-2 bg-white rounded-lg shadow-sm text-sm font-bold text-stone-900">Week</button>
-                   <button className="px-4 py-2 text-sm font-medium text-stone-500 hover:text-stone-900">Month</button>
-                   <button className="px-4 py-2 text-sm font-medium text-stone-500 hover:text-stone-900">Year</button>
+                   <button className="px-4 py-2 bg-white rounded-lg shadow-sm text-sm leading-normal font-semibold text-slate-900">Week</button>
+                   <button className="px-4 py-2 text-sm leading-normal font-medium text-slate-600 hover:text-slate-900">Month</button>
+                   <button className="px-4 py-2 text-sm leading-normal font-medium text-slate-600 hover:text-slate-900">Year</button>
                 </div>
              </div>
 
@@ -32,17 +32,17 @@ export const DashboardPreview: React.FC = () => {
                 {/* Stats */}
                 <div className="lg:col-span-1 space-y-6">
                    <div className="p-6 rounded-2xl border border-stone-100 hover:border-brand-200 transition-colors cursor-default">
-                      <p className="text-sm font-medium text-stone-400 mb-2">Total Revenue</p>
-                      <p className="text-3xl font-extrabold text-stone-900">$48,200</p>
+                      <p className="text-sm leading-normal font-medium text-slate-600 mb-2">Total Revenue</p>
+                      <p className="text-3xl font-bold text-slate-900">$48,200</p>
                    </div>
                    <div className="p-6 rounded-2xl border border-stone-100 hover:border-brand-200 transition-colors cursor-default">
-                      <p className="text-sm font-medium text-stone-400 mb-2">Jobs Completed</p>
-                      <p className="text-3xl font-extrabold text-stone-900">142</p>
+                      <p className="text-sm leading-normal font-medium text-slate-600 mb-2">Jobs Completed</p>
+                      <p className="text-3xl font-bold text-slate-900">142</p>
                    </div>
                    <div className="p-6 rounded-2xl border border-stone-100 hover:border-brand-200 transition-colors cursor-default">
-                      <p className="text-sm font-medium text-stone-400 mb-2">Avg. Review</p>
+                      <p className="text-sm leading-normal font-medium text-slate-600 mb-2">Avg. Review</p>
                       <div className="flex items-center gap-2">
-                        <p className="text-3xl font-extrabold text-stone-900">4.98</p>
+                        <p className="text-3xl font-bold text-slate-900">4.98</p>
                         <span className="text-yellow-400">★</span>
                       </div>
                    </div>
@@ -58,7 +58,7 @@ export const DashboardPreview: React.FC = () => {
                                <stop offset="95%" stopColor="#f43f5e" stopOpacity={0}/>
                             </linearGradient>
                          </defs>
-                         <Tooltip 
+                         <Tooltip
                             contentStyle={{backgroundColor: '#1c1917', border: 'none', borderRadius: '12px', color: '#fff'}}
                             itemStyle={{color: '#fff'}}
                             cursor={{stroke: '#e7e5e4', strokeWidth: 1}}

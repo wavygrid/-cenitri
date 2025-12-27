@@ -3,10 +3,10 @@ import { LayoutDashboard } from 'lucide-react';
 
 export const OperationsCenter: React.FC = () => {
   return (
-    <section className="py-32 bg-slate-50 overflow-hidden border-b border-slate-200">
+    <section id="operations" className="py-24 lg:py-32 bg-slate-50 overflow-hidden border-b border-slate-200" aria-labelledby="operations-heading">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
          <div className="flex flex-col lg:flex-row gap-20 items-center">
-             
+
              {/* Visual - Clean Dashboard */}
              <div className="lg:w-1/2 order-2 lg:order-1">
                  <div className="bg-white rounded-2xl shadow-2xl shadow-slate-200/50 border border-slate-200 p-2">
@@ -19,12 +19,12 @@ export const OperationsCenter: React.FC = () => {
                          <div className="p-6">
                              <div className="flex justify-between items-end mb-8">
                                  <div>
-                                     <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Total Revenue</p>
+                                     <p className="text-xs leading-normal font-semibold text-slate-600 uppercase tracking-wider mb-1">Total Revenue</p>
                                      <p className="text-3xl font-bold text-slate-900">$12,450.00</p>
                                  </div>
-                                 <div className="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-bold">+12%</div>
+                                 <div className="bg-green-100 text-green-700 px-2 py-1 rounded text-xs leading-normal font-semibold">+12%</div>
                              </div>
-                             
+
                              <div className="space-y-3">
                                  {[1,2,3].map((i) => (
                                      <div key={i} className="flex items-center justify-between p-3 bg-white border border-slate-100 rounded-lg shadow-sm">
@@ -48,19 +48,19 @@ export const OperationsCenter: React.FC = () => {
                  <div className="bg-slate-200 h-10 w-10 rounded-xl flex items-center justify-center mb-6">
                      <LayoutDashboard className="h-5 w-5 text-slate-700" />
                  </div>
-                 <h2 className="text-4xl font-display font-bold text-slate-900 mb-6">Manage your day without the chaos.</h2>
-                 <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                 <h2 id="operations-heading" className="text-3xl md:text-4xl font-bold leading-tight text-slate-900 mb-6">Manage your day without the chaos.</h2>
+                 <p className="text-lg leading-relaxed text-slate-700 mb-8">
                      One dashboard to rule them all. See your schedule, customer details, and payments in a single, clean interface.
                  </p>
-                 
+
                  <div className="grid grid-cols-2 gap-6">
                      <div>
-                         <h4 className="font-bold text-slate-900 mb-1">Dispatch</h4>
-                         <p className="text-sm text-slate-500">Drag & drop scheduling.</p>
+                         <h4 className="font-semibold text-slate-900 mb-1">Dispatch</h4>
+                         <p className="text-sm leading-normal text-slate-600">Drag & drop scheduling.</p>
                      </div>
                      <div>
-                         <h4 className="font-bold text-slate-900 mb-1">Invoicing</h4>
-                         <p className="text-sm text-slate-500">Auto-send on completion.</p>
+                         <h4 className="font-semibold text-slate-900 mb-1">Invoicing</h4>
+                         <p className="text-sm leading-normal text-slate-600">Auto-send on completion.</p>
                      </div>
                  </div>
              </div>

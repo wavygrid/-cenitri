@@ -27,16 +27,16 @@ const templates = [
 
 export const TemplateGallery: React.FC = () => {
   return (
-    <section className="py-24 bg-white">
+    <section id="templates" className="py-24 lg:py-32 bg-white" aria-labelledby="templates-heading">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mb-16 md:flex md:items-end md:justify-between">
            <div className="max-w-2xl">
-              <h2 className="text-4xl font-extrabold text-stone-900 mb-4">Don't reinvent the wheel.</h2>
-              <p className="text-xl text-stone-500">
+              <h2 id="templates-heading" className="text-3xl md:text-4xl font-bold leading-tight text-slate-900 mb-4">Don't reinvent the wheel.</h2>
+              <p className="text-lg leading-relaxed text-slate-700">
                  We don't "design" websites from scratch. We use <strong>Proven Industry Standards</strong> that have already generated millions in revenue for tradesmen like you.
               </p>
            </div>
-           <button className="hidden md:flex items-center gap-2 font-bold text-brand-600 hover:text-brand-700 mt-4 md:mt-0">
+           <button className="hidden md:flex items-center gap-2 font-semibold text-brand-600 hover:text-brand-700 mt-4 md:mt-0">
               View all 12 industries <ArrowUpRight className="h-4 w-4" />
            </button>
         </div>
@@ -53,25 +53,25 @@ export const TemplateGallery: React.FC = () => {
                  {/* Preview Image Area */}
                  <div className={`aspect-[3/4] ${temp.imageColor} relative overflow-hidden border-x border-b border-stone-200 shadow-sm group-hover:shadow-xl transition-all duration-500`}>
                     <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center opacity-60 group-hover:opacity-100 transition-opacity">
-                       <span className="text-stone-900 font-bold text-lg mb-2">{temp.industry}</span>
+                       <span className="text-slate-900 font-semibold text-lg leading-snug mb-2">{temp.industry}</span>
                        <div className={`h-1 w-12 ${temp.accent} rounded-full`}></div>
                     </div>
                     {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-stone-900/0 group-hover:bg-stone-900/5 transition-colors"></div>
                  </div>
-                 
+
                  {/* Details */}
                  <div className="mt-6">
-                    <h3 className="text-xl font-bold text-stone-900 mb-2 flex items-center gap-2">
+                    <h3 className="text-xl font-semibold leading-snug text-slate-900 mb-2 flex items-center gap-2">
                        {temp.industry}
-                       <ArrowUpRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-stone-400" />
+                       <ArrowUpRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity text-slate-600" />
                     </h3>
-                    <p className="text-stone-500 text-sm leading-relaxed mb-4">
+                    <p className="text-slate-700 text-sm leading-relaxed mb-4">
                        {temp.description}
                     </p>
                     <div className="flex flex-wrap gap-2">
                        {temp.tags.map((tag, tIdx) => (
-                          <span key={tIdx} className="px-3 py-1 bg-stone-50 border border-stone-200 rounded-full text-xs font-semibold text-stone-600">
+                          <span key={tIdx} className="px-3 py-1 bg-stone-50 border border-stone-200 rounded-full text-xs leading-normal font-medium text-slate-700">
                              {tag}
                           </span>
                        ))}
@@ -80,9 +80,9 @@ export const TemplateGallery: React.FC = () => {
               </div>
            ))}
         </div>
-        
+
         <div className="mt-12 text-center md:hidden">
-           <button className="text-brand-600 font-bold text-sm">View all industries →</button>
+           <button className="text-brand-600 font-semibold text-sm leading-normal">View all industries →</button>
         </div>
       </div>
     </section>

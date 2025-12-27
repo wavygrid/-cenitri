@@ -14,42 +14,42 @@ const industries = [
 
 export const IndustriesGrid: React.FC = () => {
   return (
-    <section id="industries" className="py-24 bg-white">
+    <section id="industries" className="py-24 lg:py-32 bg-white" aria-labelledby="industries-heading">
        <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12">
               <div className="max-w-xl">
-                  <h2 className="text-4xl font-extrabold text-stone-900 mb-4">Built for your specific trade.</h2>
-                  <p className="text-lg text-stone-500">
+                  <h2 id="industries-heading" className="text-3xl md:text-4xl font-bold leading-tight text-slate-900 mb-4">Built for your specific trade.</h2>
+                  <p className="text-lg leading-relaxed text-slate-700">
                       We don't do "generic." Every industry has a specific data model, pricing structure, and keyword strategy pre-built.
                   </p>
               </div>
-              <button className="hidden md:flex items-center gap-2 font-bold text-stone-900 border-b-2 border-stone-200 hover:border-brand-600 transition-all pb-1 mt-6 md:mt-0">
+              <button className="hidden md:flex items-center gap-2 font-semibold text-slate-900 border-b-2 border-slate-200 hover:border-brand-600 transition-all pb-1 mt-6 md:mt-0">
                   See all 40+ industries <ArrowRight className="h-4 w-4" />
               </button>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {industries.map((ind, idx) => (
-                  <div 
-                    key={idx} 
+                  <div
+                    key={idx}
                     className={`group relative p-6 rounded-3xl ${ind.color} hover:shadow-lg transition-all cursor-pointer h-48 flex flex-col justify-between overflow-hidden`}
                   >
                       <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
                           <ArrowRight className="h-5 w-5" />
                       </div>
-                      <span className="font-bold text-lg">{ind.name}</span>
-                      <div className="text-xs font-semibold bg-white/50 backdrop-blur-sm px-3 py-1 rounded-full w-fit">
+                      <span className="font-semibold text-lg">{ind.name}</span>
+                      <div className="text-xs leading-normal font-medium bg-white/50 backdrop-blur-sm px-3 py-1 rounded-full w-fit">
                           {ind.count}
                       </div>
-                      
+
                       {/* Decorative Circle */}
                       <div className="absolute -bottom-8 -right-8 h-24 w-24 rounded-full bg-white/20 blur-xl group-hover:bg-white/30 transition-colors"></div>
                   </div>
               ))}
           </div>
-          
+
           <div className="mt-8 text-center md:hidden">
-              <button className="text-brand-600 font-bold text-sm">View all industries →</button>
+              <button className="text-brand-600 font-semibold text-sm leading-normal">View all industries →</button>
           </div>
        </div>
     </section>
